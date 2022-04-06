@@ -275,9 +275,173 @@ Some hash format similar to 01a92869d1a41e895440cc0e4c835997f2a5851643.
 </details>
 
 <details>
-<summary></summary>
+<summary>01269aec1979091b3bdd737b4fa0ece8fd846f97db</summary>
 <br>
-Test
+PKzip file. Renamed to xxx.pk and extracted businesslinks-0-1.dat.
+</details>
+
+<details>
+<summary>01514fe2f4af73f5084c94d696805202595fa49355</summary>
+<br>
+PKzip file. Renamed to xxx.pk and extracted businesslinks-0-1.dat.
+</details>
+
+<details>
+<summary>014727dc7648d0e379fa996ca57f8b2b597abb1ca4</summary>
+<br>
+Some hash format similar to 01a92869d1a41e895440cc0e4c835997f2a5851643.
+</details>
+
+<details>
+<summary>016368caf4ed6ec90b38c535c84356e8df515e509e</summary>
+<br>
+PKzip file contains DomainShard-0_1_2445241258109774241.dat.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/c6d2020d847f394d523f5ff2cdf6d0d6c2d0898e/Extracted/DomainShard-0_1_15341726279663982934.dat
+</details>
+
+<details>
+<summary>053846-160</summary>
+<br>
+Pointing to bundle locations.
+</details>
+
+<details>
+<summary>084438-1</summary>
+<br>
+Unknown Data Format.
+</details>
+
+<details>
+<summary>090831-1364</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>108343-1</summary>
+<br>
+Unknown Data Format.
+</details>
+
+<details>
+<summary>0129661ceee244e344b426b1af33969cffb4641420</summary>
+<br>
+Some hash format similar to 01a92869d1a41e895440cc0e4c835997f2a5851643.
+</details>
+
+<details>
+<summary>142723-136</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>173934-1</summary>
+<br>
+Unknown Data Format.
+</details>
+
+<details>
+<summary>0198867b10efb4d8e8aa0a0c5758a61ed2194efc21</summary>
+<br>
+PKzip file contains DomainShard-0_1_2568410618508953843.dat.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/161ba3ad95ef5ce49c66e0fdc9112549641e96f0/Extracted/DomainShard-0_1_2568410618508953843.dat
+</details>
+
+<details>
+<summary>234837-14</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>257039-1</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>257239-174</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>271542-72</summary>
+<br>
+Unknown Data Format.
+</details>
+
+<details>
+<summary>279693-109</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>321447-43</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>333759-117</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>378768-12</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>389074-16</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>458158-688</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>477703-125</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>579934-27</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>630586-9</summary>
+<br>
+Unknown Data Format.
+</details>
+
+<details>
+<summary>723280-2021</summary>
+<br>
+Pointing to locationd bundles and frameworks.
+</details>
+
+<details>
+<summary>796170-65</summary>
+<br>
+Contains MAC Addreses.
+</details>
+
+<details>
+<summary>961198-3</summary>
+<br>
+Unknown Data Format.
 </details>
 
 
@@ -293,31 +457,20 @@ Test
 
 
 
-01269aec1979091b3bdd737b4fa0ece8fd846f97db
-01514fe2f4af73f5084c94d696805202595fa49355
-014727dc7648d0e379fa996ca57f8b2b597abb1ca4
-016368caf4ed6ec90b38c535c84356e8df515e509e
-053846-160
-084438-1
-090831-1364
-108343-1
-0129661ceee244e344b426b1af33969cffb4641420
-142723-136
-173934-1
-0198867b10efb4d8e8aa0a0c5758a61ed2194efc21
-234837-14
-257039-1
-257239-174
-271542-72
-279693-109
-321447-43
-333759-117
-378768-12
-389074-16
-458158-688
-477703-125
-579934-27
-630586-9
-723280-2021
-796170-65
-961198-3
+
+
+
+
+
+
+
+
+
+
+
+<details>
+<summary></summary>
+<br>
+Test
+</details>
+
