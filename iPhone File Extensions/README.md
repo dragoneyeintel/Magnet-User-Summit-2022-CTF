@@ -201,9 +201,6 @@ Some hash format similar to 01a92869d1a41e895440cc0e4c835997f2a5851643.
 Some hash format similar to 01a92869d1a41e895440cc0e4c835997f2a5851643.
 </details>
 
-
-
-
 <details>
 <summary>019bcdbb9094048407bf49d87c5dcdb7f8a0584828</summary>
 <br>
@@ -228,49 +225,53 @@ https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/c34b08ee16e27
 <details>
 <summary>128</summary>
 <br>
-Test
+File with string #IMPOSTOR v001 and unknown data. Amongus?!
 </details>
 
 <details>
 <summary>0129f8927a29c1a46478e9269e0072cee6f2650b2e</summary>
 <br>
-Test
+PKzip file. Renamed to xxx.pk and extracted businesslinks-0-1.dat.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/c2492407bc9d4cebdd8c3b96be2d8e80acc1d645/Extracted/businesslinks-0-1(8).dat
 </details>
 
 <details>
 <summary>0154ad776c157934833d4a2db8406338e2c3aa1a71</summary>
 <br>
-Test
+PKzip file contains DomainShard-0_1_7780353249969419096.dat. 
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/7782a39e31fd8fab342bb446ab784bfc2237614f/Extracted/DomainShard-0_1_7780353249969419096.dat
 </details>
 
 <details>
 <summary>0169f8f53f151460a63088e8b598f2085384fa86b1</summary>
 <br>
-Test
+PKzip file. Renamed to xxx.pk and extracted businesslinks-0-1.dat.
 </details>
 
 <details>
 <summary>0185d30323756419148e28aa455dcede13720d1a9f</summary>
 <br>
-Test
+PKzip file contains DomainShard-0_1_2445241258109774241.dat.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/b988610f0df91bd3529dc56684d0269437256b13/Extracted/DomainShard-0_1_2445241258109774241.dat
 </details>
 
 <details>
 <summary>0404d6a6feac9c9033b09438bea2d2b23ef9e2dfc5</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>01197cfdd66349294c4be7ba405805003c5561feca</summary>
 <br>
-Test
+PKzip file contained DomainShard-0_1_14147378989737520402.dat.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/623044d7a778e6f0a656e498e83d20345bddc65d/Extracted/DomainShard-0_1_14147378989737520402.dat
 </details>
 
 <details>
 <summary>01256f67bf8bd8fe34ec322581b81d825de5008888</summary>
 <br>
-Test
+Some hash format similar to 01a92869d1a41e895440cc0e4c835997f2a5851643.
 </details>
 
 <details>
