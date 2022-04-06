@@ -853,163 +853,163 @@ Discord Session Info
 <details>
 <summary>dat</summary>
 <br>
-Test
+Data. Some Binary Plist, some cleartext, some SQLite3, and some Unknown.
 </details>
 
 <details>
 <summary>data</summary>
 <br>
-Test
+Data. Some Binary Plist, some cleartext, some SQLite3, and some Unknown.
 </details>
 
 <details>
 <summary>database</summary>
 <br>
-Test
+SQLite3 DB.
 </details>
 
 <details>
 <summary>dat-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>dat-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>db</summary>
 <br>
-Test
+Some Plist, some SQLite3 DB.
 </details>
 
 <details>
 <summary>db-journal</summary>
 <br>
-Test
+Size 0
 </details>
 
 <details>
 <summary>db-lock</summary>
 <br>
-Test
+Size 0
 </details>
 
 <details>
 <summary>db-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>db-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>default</summary>
 <br>
-Test
+Logging/default.
 </details>
 
 <details>
 <summary>defaults</summary>
 <br>
-Test
+Defualt XML options.
 </details>
 
 <details>
 <summary>deflate</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>der</summary>
 <br>
-Test
+Certificates for Chess, Signal, Snapchat, Amplitude, library.
 </details>
 
 <details>
 <summary>desdata</summary>
 <br>
-Test
+Data (Binary Plist) mapped to certs, one not size 0.
 </details>
 
 <details>
 <summary>dfu</summary>
 <br>
-Test
+Unknown Data Format. Apple certificate appears near bottom.
 </details>
 
 <details>
 <summary>DiagnosticExtension</summary>
 <br>
-Test
+Apple podcast extension.
 </details>
 
 <details>
 <summary>dict</summary>
 <br>
-Test
+Siri translation hotfix. Interesting data.
 </details>
 
 <details>
 <summary>directoryStoreFile</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>dnn</summary>
 <br>
-Test
+DotNetNuke Files.
 </details>
 
 <details>
 <summary>doc</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>docobjects</summary>
 <br>
-Test
+SQLite3 DBs.
 </details>
 
 <details>
 <summary>docobjects-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>docobjects-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>dspg</summary>
 <br>
-Test
+Reverb Suppressor data.
 </details>
 
 <details>
 <summary>dyld4</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>DynamiteClientState</summary>
 <br>
-Test
+Size 0.
 </details>
 
   
