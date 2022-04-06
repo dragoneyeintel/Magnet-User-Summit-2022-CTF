@@ -446,11 +446,6 @@ Contains MAC Addreses.
 Unknown Data Format.
 </details>
 
-
-
-
-
-
 <details>
 <summary>aac</summary>
 <br>
@@ -506,38 +501,354 @@ Logs and data. Mentions Verizon.
 App removal protocol files.
 </details>
 
-  
-  
-  
-  
 <details>
 <summary>archive</summary>
 <br>
-Test
+FaceTime, Phone, and other logs (Binary Plist format)
 </details>
 
 <details>
 <summary>ast</summary>
 <br>
-Test
+Utilized by Snapchat.
 </details>
 
 <details>
 <summary>austrip</summary>
 <br>
-Test
+Audio supressor presets.
 </details>
 
 <details>
 <summary>avl</summary>
 <br>
-Test
+Unkown Data Format. Locationd cache.
+</details>
+
+<details>
+<summary>b137</summary>
+<br>
+Unkown Data Format. (Kernel Cache)
+</details>
+
+<details>
+<summary>b165</summary>
+<br>
+Unkown Data Format. (Kernel Cache)
+</details>
+
+<details>
+<summary>backup</summary>
+<br>
+Unkown Data Format. Binary and Magic Leap maybe?
+</details>
+
+<details>
+<summary>badgeCounts</summary>
+<br>
+Binary Plist for gamecenter badges.
+</details>
+
+<details>
+<summary>bf2-head</summary>
+<br>
+Unkown Data Format.
+</details>
+
+<details>
+<summary>bf2-tail</summary>
+<br>
+Unkown Data Format.
+</details>
+
+<details>
+<summary>bin</summary>
+<br>
+Binary Files. Many chess related binaries.
+</details>
+
+<details>
+<summary>binarycookies</summary>
+<br>
+Cookies and links. Device IDs 37e77518-7518-1839-39c3-c34541a8f181, 6cfce81a-e81a-1a13-13ef-ef4e029348e1.
+</details>
+
+<details>
+<summary>binarypb</summary>
+<br>
+GMail timestamp calculator mapper.
+</details>
+
+<details>
+<summary>blacklist</summary>
+<br>
+Locally blacklisted suggestion words possibly.
+</details>
+
+<details>
+<summary>br</summary>
+<br>
+Unkown Data Format.
+</details>
+
+<details>
+<summary>buckets</summary>
+<br>
+Unkown Data Format.
+</details>
+
+<details>
+<summary>c3b</summary>
+<br>
+3D object file. (GeoServices)
+</details>
+
+<details>
+<summary>c3h</summary>
+<br>
+3D object file. (GeoServices)
+</details>
+
+<details>
+<summary>caar</summary>
+<br>
+Binary Plists.
+</details>
+
+<details>
+<summary>cache</summary>
+<br>
+Binary Plist and logs.
+</details>
+
+<details>
+<summary>cached</summary>
+<br>
+Generic webpage caching.
+</details>
+
+<details>
+<summary>cache-shm</summary>
+<br>
+Unknown Data Format.
+</details>
+
+<details>
+<summary>cache-wal</summary>
+<br>
+SQLite Data.
+</details>
+
+<details>
+<summary>caf</summary>
+<br>
+Core Audio Format Files, mainly Wire, Signal, Bumble, GMail, some used by IOS.
+</details>
+
+<details>
+<summary>caml</summary>
+<br>
+XML properties for weather animations.
+</details>
+
+<details>
+<summary>car</summary>
+<br>
+Compiled asset catalogs for each application.
+</details>
+
+<details>
+<summary>cdm</summary>
+<br>
+Binary Plist Files.
+</details>
+
+<details>
+<summary>cer</summary>
+<br>
+Signal and Reddit certificate files.
+</details>
+
+<details>
+<summary>cert</summary>
+<br>
+Apple Voice signing Certifiacte.
+</details>
+
+<details>
+<summary>cfg</summary>
+<br>
+Unknown Data Formats.
+</details>
+
+<details>
+<summary>chrono-timeline</summary>
+<br>
+Binary Plist Files.
+</details>
+
+<details>
+<summary>cloudkeychainproxy3</summary>
+<br>
+Binary Plist File.
+</details>
+
+<details>
+<summary>cloudphotodb</summary>
+<br>
+SQLite3 DB.
+</details>
+
+<details>
+<summary>cloudphotodb-shm</summary>
+<br>
+Unknown Data Formats.
+</details>
+
+<details>
+<summary>cloudphotodb-wal</summary>
+<br>
+Unknown Data Formats.
+</details>
+
+<details>
+<summary>clsrecord</summary>
+<br>
+Logs.
+</details>
+
+<details>
+<summary>cmdsyncagent</summary>
+<br>
+Binary Plist Files.
+</details>
+
+<details>
+<summary>cmsketch</summary>
+<br>
+Unknown Data Formats.
+</details>
+
+<details>
+<summary>colorboxes</summary>
+<br>
+Binary Plist Files.
+</details>
+
+<details>
+<summary>com%2Fprofile_banners%2F1079665371521732608%2F1546248329</summary>
+<br>
+JFIF image.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/95ddcff059870e80b13b1d1adb620a4929eedc60/Extracted/banner.jfif
+</details>
+
+<details>
+<summary>com%2Fsemantic_core_img%2F1349364783632379904%2FkJiqsw6o%3Fformat%3Djpg%26name%3Dorig</summary>
+<br>
+JFIF image.
+https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/a41f00fbf88a2126f3195d3b3aeabd275667b5ab/Extracted/banner(2).jfif
+</details>
+
+<details>
+<summary>composermodule</summary>
+<br>
+Unknown Data Format, all for Snapchat.
+</details>
+
+<details>
+<summary>config</summary>
+<br>
+Some Binary Plist files, some XML config files. Contains many tokens and keys.
+</details>
+
+<details>
+<summary>CoreSuggestions</summary>
+<br>
+Binary Plist Files.
+</details>
+
+<details>
+<summary>coretelephony</summary>
+<br>
+Binary Plist Files.
+</details>
+
+<details>
+<summary>corona-archive</summary>
+<br>
+Unknown file (magic bits "rac") for Collector application.
+</details>
+
+<details>
+<summary>counters</summary>
+<br>
+Binary Plist File.
+</details>
+
+<details>
+<summary>counts</summary>
+<br>
+Raw data and Binary Plist.
+</details>
+
+<details>
+<summary>cpbitmap</summary>
+<br>
+Bitmap Files.
+</details>
+
+<details>
+<summary>crc</summary>
+<br>
+In Documents and GeoPolygonDataAssets. 
+</details>
+
+<details>
+<summary>crt</summary>
+<br>
+Certificates for Signal.
+</details>
+
+<details>
+<summary>csl</summary>
+<br>
+Generic data.
+</details>
+
+<details>
+<summary>css</summary>
+<br>
+Default Stylesheets.
+</details>
+
+<details>
+<summary>csstore</summary>
+<br>
+Applinks and interesting strings.
+</details>
+
+<details>
+<summary>csv</summary>
+<br>
+Battery Data.
+</details>
+
+<details>
+<summary>ctrl</summary>
+<br>
+Binary Plist.
+</details>
+
+<details>
+<summary>current</summary>
+<br>
+Discord Session Info
 </details>
 
 
-
-
-
+  
+  
+</details>
 
 
 
@@ -549,4 +860,3 @@ Test
 Test
 </details>
 
-</details>
