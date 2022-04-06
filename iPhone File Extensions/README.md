@@ -1,4 +1,6 @@
 <details>
+<summary>ALL</summary>
+<details>
 <summary>- guest -</summary>
 <br>
 Binary Plist file
@@ -449,15 +451,88 @@ Unknown Data Format.
 
 
 
+<details>
+<summary>aac</summary>
+<br>
+Audio files for Twitter.
+</details>
 
+<details>
+<summary>acv</summary>
+<br>
+Filter Assets for Twitter.
+</details>
 
+<details>
+<summary>aifc</summary>
+<br>
+Audio files for Signal.
+</details>
 
+<details>
+<summary>aiff</summary>
+<br>
+Audio files for Water Sort Puzzle, Books, and Twitter
+</details>
 
+<details>
+<summary>airdrop_dbv4</summary>
+<br>
+Unkown Data Format.
+</details>
 
+<details>
+<summary>analytics</summary>
+<br>
+Binary Plist.
+</details>
 
+<details>
+<summary>analyticsData</summary>
+<br>
+Raw data for corona.
+{"1642803189":"%7B%22tm%22%3A1642803189%2C%22c%22%3A%22US%22%2C%22b%22%3A%22s140229%22%2C%22pl%22%3A%22iOS15%2E0%2E2%22%2C%22w%22%3A2811%2C%22bi%22%3A%22ru%2Eappscraft%2ECollectorGame%22%2C%22i%22%3A19013%2C%22m%22%3A625%2C%22d%22%3A19013%7D","1643827647":"%7B%22tm%22%3A1643827647%2C%22c%22%3A%22US%22%2C%22b%22%3A%22s140229%22%2C%22pl%22%3A%22iOS15%2E0%2E2%22%2C%22w%22%3A2812%2C%22bi%22%3A%22ru%2Eappscraft%2ECollectorGame%22%2C%22i%22%3A19013%2C%22r7%22%3A1%2C%22m%22%3A626%2C%22r1%22%3A1%2C%22d%22%3A19025%7D"}
+</details>
 
+<details>
+<summary>anon</summary>
+<br>
+Logs and data. Mentions Verizon.
+</details>
 
+<details>
+<summary>appremoval</summary>
+<br>
+App removal protocol files.
+</details>
 
+  
+  
+  
+  
+<details>
+<summary>archive</summary>
+<br>
+Test
+</details>
+
+<details>
+<summary>ast</summary>
+<br>
+Test
+</details>
+
+<details>
+<summary>austrip</summary>
+<br>
+Test
+</details>
+
+<details>
+<summary>avl</summary>
+<br>
+Test
+</details>
 
 
 
@@ -474,3 +549,4 @@ Unknown Data Format.
 Test
 </details>
 
+</details>
