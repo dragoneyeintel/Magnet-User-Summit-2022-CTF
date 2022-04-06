@@ -5,4 +5,4 @@
 ### Preliminary Information
 ### File Extensions
 A custom script was used to extract all of the files and sort them by type.
-See iPhone File Extensions File
+See iPhone File Extensions File.
