@@ -1,4 +1,20 @@
 <details>
+<summary>Important</summary>
+
+<details>
+<summary></summary>
+<br>
+Test
+</details>
+
+
+  
+  
+</details>
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+<details>
 <summary>ALL</summary>
 <details>
 <summary>- guest -</summary>
@@ -2081,811 +2097,811 @@ Disclamers and legal rich text format.
 <details>
 <summary>sbd3</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>scn</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>sdef</summary>
 <br>
-Test
+XML pointing to MobileStore password file.
 </details>
 
 <details>
 <summary>seed</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sent</summary>
 <br>
-Test
+Raw corona data.
 </details>
 
 <details>
 <summary>ser</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>session</summary>
 <br>
-Test
+Logs.
 </details>
 
 <details>
 <summary>sh</summary>
 <br>
-Test
+Mapbox bash script.
 </details>
 
 <details>
 <summary>shadow</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexArrays</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexCompactDirectory</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexDirectory</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexGroups</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexHead</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexPositionTable</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shadowIndexTermIds</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>shape</summary>
 <br>
-Test
+Graphics shapes.
 </details>
 
 <details>
 <summary>SharingExtension</summary>
 <br>
-Test
+Notes sharing extension, plist.
 </details>
 
 <details>
 <summary>shutdown</summary>
 <br>
-Test
+Size 0.
 </details>
 
 <details>
 <summary>si</summary>
 <br>
-Test
+Logging, java and IOS info.
 </details>
 
 <details>
 <summary>sidb</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sidf</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sidt</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sidv</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>signature</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sinf</summary>
 <br>
-Test
+Unknown Data Format. Contains application info and Full name.
 </details>
 
 <details>
 <summary>sisb</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sisv</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>snapshot</summary>
 <br>
-Test
+Raw snapshots.
 </details>
 
 <details>
 <summary>SpotlightIndexExtension</summary>
 <br>
-Test
+Voice,podcast,notes extensions.
 </details>
 
 <details>
 <summary>sql</summary>
 <br>
-Test
+Raw sql creation script and SQLite3 DBs.
 </details>
 
 <details>
 <summary>sql3</summary>
 <br>
-Test
+SQLite3 DB.
 </details>
 
 <details>
 <summary>sqlite</summary>
 <br>
-Test
+SQLite (mostly v3) DBs.
 </details>
 
 <details>
 <summary>sqlite3</summary>
 <br>
-Test
+SQLite3 DBs.
 </details>
 
 <details>
 <summary>sqlite3-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlite3-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlitedb</summary>
 <br>
-Test
+SQLite3 DBs.
 </details>
 
 <details>
 <summary>sqlitedb-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlitedb-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlite-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlite-sqlite</summary>
 <br>
-Test
+SQLite3 DB.
 </details>
 
 <details>
 <summary>sqlite-sqlite-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlite-sqlite-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sqlite-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sql-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>sql-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>StackIntelligence</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>state</summary>
 <br>
-Test
+Logging & Binaey Plists.
 </details>
 
 <details>
 <summary>storage</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>store</summary>
 <br>
-Test
+SQLite3 DB.
 </details>
 
 <details>
 <summary>storedata</summary>
 <br>
-Test
+SQLite3 DB.
 </details>
 
 <details>
 <summary>storedata-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>storedata-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>storekit</summary>
 <br>
-Test
+Storekit configuration.
 </details>
 
 <details>
 <summary>store-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>store-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>storyboard</summary>
 <br>
-Test
+Interface builder.
 </details>
 
 <details>
 <summary>strings</summary>
 <br>
-Test
+Binary Plist Files.
 </details>
 
 <details>
 <summary>stringsdict</summary>
 <br>
-Test
+Binary Plist Files.
 </details>
 
 <details>
 <summary>styl</summary>
 <br>
-Test
+STYL sheets.
 </details>
 
 <details>
 <summary>suggestions</summary>
 <br>
-Test
+Binary Plist Files.
 </details>
 
 <details>
 <summary>sui</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>supf</summary>
 <br>
-Test
+Contains certificates.
 </details>
 
 <details>
 <summary>supp</summary>
 <br>
-Test
+Contains certificates.
 </details>
 
 <details>
 <summary>supx</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>svg</summary>
 <br>
-Test
+Logos, mainly emojis.
 </details>
 
 <details>
 <summary>symmap</summary>
 <br>
-Test
+Unknown Data Format (QSR_SYM_V000).
 </details>
 
 <details>
 <summary>synced</summary>
 <br>
-Test
+Analytics and logs.
 </details>
 
 <details>
 <summary>SyncedTabs</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>tab</summary>
 <br>
-Test
+Country codes and zone ranges.
 </details>
 
 <details>
 <summary>tbin</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>tbl</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>test</summary>
 <br>
-Test
+Generic raw data.
 </details>
 
 <details>
 <summary>tgfc</summary>
 <br>
-Test
+Saturation & Contrast.
 </details>
 
 <details>
 <summary>THM</summary>
 <br>
-Test
+Exif data.
 </details>
 
 <details>
 <summary>threadinfo</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>thw</summary>
 <br>
-Test
+Raw data.
 </details>
 
 <details>
 <summary>tiff</summary>
 <br>
-Test
+Some generic images and an image preview.
 </details>
 
 <details>
 <summary>tim</summary>
 <br>
-Test
+Wordlist.
 </details>
 
 <details>
 <summary>timestamp</summary>
 <br>
-Test
+Last in foreground timestamp.
 </details>
 
 <details>
 <summary>timesync</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>TimeToLeaveRefresh</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>tip</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>tipsd</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>tmp</summary>
 <br>
-Test
+Temp files and downloads.
 </details>
 
 <details>
 <summary>tmpl</summary>
 <br>
-Test
+HTML Templates.
 </details>
 
 <details>
 <summary>tok</summary>
 <br>
-Test
+Size 0.
 </details>
 
 <details>
 <summary>token</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>tpkg</summary>
 <br>
-Test
+TPKG config files.
 </details>
 
 <details>
 <summary>tracev3</summary>
 <br>
-Test
+Logging.
 </details>
 
 <details>
 <summary>tracker-info</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>triald</summary>
 <br>
-Test
+Triald logging.
 </details>
 
 <details>
 <summary>trie</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>triemap</summary>
 <br>
-Test
+Char & Word maps.
 </details>
 
 <details>
 <summary>tsm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>tsv</summary>
 <br>
-Test
+Generic tab separated values.
 </details>
 
 <details>
 <summary>ttf</summary>
 <br>
-Test
+Font files.
 </details>
 
 <details>
 <summary>tvd</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>tvx</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>txt</summary>
 <br>
-Test
+Text files.0
 </details>
 
 <details>
 <summary>unit</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>unity3d</summary>
 <br>
-Test
+Unity FS.
 </details>
 
 <details>
 <summary>Unprotected</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>updates</summary>
 <br>
-Test
+Null.
 </details>
 
 <details>
 <summary>urls</summary>
 <br>
-Test
+Image urls.
 </details>
 
 <details>
 <summary>UserRequests</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>userStore</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>uuid</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>vecs</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>vipsenders</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>voc</summary>
 <br>
-Test
+DFILE.
 </details>
 
 <details>
 <summary>vocab</summary>
 <br>
-Test
+User vocab.
 </details>
 
 <details>
 <summary>vsh</summary>
 <br>
-Test
+Graphics coordination code.
 </details>
 
 <details>
 <summary>w</summary>
 <br>
-Test
+Java related info.
 </details>
 
 <details>
 <summary>wav</summary>
 <br>
-Test
+Generic audio files.
 </details>
 
 <details>
 <summary>weather</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>webarchive</summary>
 <br>
-Test
+Binary Plist.
 </details>
 
 <details>
 <summary>webp</summary>
 <br>
-Test
+WEBP images mostly generic  one of leo from matrix.
 </details>
 
 <details>
 <summary>weights</summary>
 <br>
-Test
+Raw data, shit crashed notepad++.
 </details>
 
 <details>
 <summary>whitelist</summary>
 <br>
-Test
+Whitelisted apple services.
 </details>
 
 <details>
 <summary>WidgetExtension</summary>
 <br>
-Test
+Notes extension.
 </details>
 
 <details>
 <summary>wiredatabase</summary>
 <br>
-Test
+SQLite3 DB.
 </details>
 
 <details>
 <summary>wiredatabase-shm</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>wiredatabase-wal</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>witness</summary>
 <br>
-Test
+Timestamp.
 </details>
 
 <details>
 <summary>woa_wa_getBag_ix=2</summary>
 <br>
-Test
+Keys, signature, & bag.
 </details>
 
 <details>
 <summary>woff2</summary>
 <br>
-Test
+Font Files.
 </details>
 
 <details>
 <summary>wordmap</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>xcent</summary>
 <br>
-Test
+Bumble application identifier.
 </details>
 
 <details>
 <summary>xhtml</summary>
 <br>
-Test
+Generic viewport.
 </details>
 
 <details>
 <summary>xid</summary>
 <br>
-Test
+Unknown Data Format.
 </details>
 
 <details>
 <summary>xml</summary>
 <br>
-Test
+XML files.
 </details>
 
 <details>
 <summary>xsl</summary>
 <br>
-Test
+XSL Stylesheet.
 </details>
 
 <details>
 <summary>xx</summary>
 <br>
-Test
+Chess data.
 </details>
 
 <details>
 <summary>yaml</summary>
 <br>
-Test
+Translation config.
 </details>
 
 <details>
@@ -2894,18 +2910,6 @@ Test
 Applications and themes.
 </details>
 
-
-
-
 </details>
 
-
-
-
-
-<details>
-<summary></summary>
-<br>
-Test
-</details>
-
+^^ Quick overview of all 474 filetypes. ^^
