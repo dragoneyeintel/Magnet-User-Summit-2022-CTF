@@ -3,7 +3,9 @@
 
 ## iPhone
 ### Preliminary Information (Acquired from GrayKey)
-General Information
+<details markdown="1">
+<summary>General Information</summary>
+
 | Parameter | Value |
 | --- | --- |
 | Device Name | `iPhone 8` |
@@ -24,7 +26,11 @@ General Information
 | Accounts | `pbentley0107@gmail.com` |
 | Passcode (or unlock mechanism) | `782677` |
 
-General Passwords
+</details>
+
+<details markdown="1">
+<summary>General Passwords</summary>
+
 | Creation Date | Modification Date | Service | Access Group | Account | Value |
 | --- | --- | --- | --- | --- | --- |
 | 20220106224101.45771Z | 20220106224101.45771Z | CommCenter | apple | com.apple.thumper.9f61e42f4c918cc6c41b6bf764415be95acdcdfd | Oh2a+ZuX+6c7pGP+NBt3sEUqVat+ukaMBGizTwYByuA= |
@@ -101,7 +107,12 @@ General Passwords
 | 20220204003137.801057Z | 20220204003137.801057Z | AirPort | apple | ChamplainPSK | letusdare |
 | 20220206044040.370864Z | 20220206044040.370864Z | AirPort | apple | Apple | NetherConqueror0107 |
 
-Internet Passwords
+</details>
+
+
+<details markdown="1">
+<summary>Internet Passwords</summary>
+
 | ptcl | Access Group | path | Account | port | invi | desc | srvr | Creation Date | Modification Date | Item Value |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | com.apple.security.ckks | 993AD9DD-E91D-4F6C-8D7E-959D9EDC66BB | 993AD9DD-E91D-4F6C-8D7E-959D9EDC66BB | 0 | 1 | tlk | Backstop | 20220121212511.296182Z | 20220121212513.149656Z | psTjYHBJEsQ2fgE7vJCqJwmsOSqI+58K3FOIRnpyn5C9nOOxauyjFdqvU2iI9kGf22HnTF1rygIUDy3wxhMvPw== |
@@ -168,6 +179,8 @@ Internet Passwords
 | 0 | com.apple.security.ckks | FF0E3D5A-0202-409E-97C6-2A8D1ED1C25D | FF0E3D5A-0202-409E-97C6-2A8D1ED1C25D | 0 | 1 | tlk-nonsync | Applications | 20220121212511.366459Z | 20220121212512.954617Z | yPZ4kBhmjl0+n5LaMqPuQ1oxQ+jRvLQ63ZdYtmGrMlooRXX3BmMvHKuelY1hX7YjwlkLUjrE9EX2kEpm01d4JQ== |
 | 0 | com.apple.security.ckks | FF0E3D5A-0202-409E-97C6-2A8D1ED1C25D | D9AC084A-F2AA-4A6A-A104-BBFA1C549498 | 0 | 1 | classA | Applications | 20220121212511.367385Z | 20220121212512.958923Z | vqncmg/iUjyK2CIRuriUMBqR5w1959c7lU1N9NSxnA1isIc/PXdubFwK7GMvN98nGu9juHCaIoIqU9yqBzWIiA== |
 | 0 | com.apple.security.ckks | FF0E3D5A-0202-409E-97C6-2A8D1ED1C25D | 47C5CAF7-A045-4A91-9191-8E9060DFC853 | 0 | 1 | classC | Applications | 20220121212511.368425Z | 20220121212512.963779Z | Bzd95L+ijEGeHGlIvIXRMY61YiSrkUjjuRST0HJqXgnxyPDbkxYl85muhKkvaML+T49Wm9zrCUkIc51bLwinhw== |
+
+</details>
 
 ### File Extensions
 A custom script was used to extract all of the files and sort them by type.
