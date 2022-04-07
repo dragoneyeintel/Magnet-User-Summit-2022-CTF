@@ -5,7 +5,7 @@
 <summary>- guest -</summary>
 <br>
 Binary Plist file
-https://stackoverflow.com/questions/8856032/reading-binary-plist-files-with-python
+https://marketplace.visualstudio.com/items?itemName=dnicolson.binary-plist
 </details>
 
 <details>
