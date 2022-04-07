@@ -1199,12 +1199,6 @@ Unknown Data Format.
 </details>
 
 <details>
-<summary></summary>
-<br>
-Binary Plist.
-</details>
-
-<details>
 <summary>HEIC</summary>
 <br>
 HEIC images. Contain imgs of woods, starwars helmet, and building.
