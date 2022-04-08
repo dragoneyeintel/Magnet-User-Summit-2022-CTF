@@ -1,5 +1,7 @@
 Note that 'Token' and 'Key' are used interchangably. Also note that these tokens which have been carved from binary plist files may have an extra character as we are reading bplist with a text editor.
 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 <details>
 <summary>Binary Plist</summary>
   
@@ -197,6 +199,74 @@ Note that 'Token' and 'Key' are used interchangably. Also note that these tokens
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+<details>
+<summary>SQLite Data</summary>
+
+| Location | Parameter | Value |
+| --- | --- | --- |
+| store.cloudphotodb | CloudInfo | SeeFile |
+| com.amplitude.database | AmplitudeData | (previous_session_id:1644862629762)(previous_session_time:1644862745788)(device_id:DDB0353F-4077-49A5-AD01-45683E0176BD)(user_id:45582719) |
+| sync.db | ModelInfo | (deviceIidentifier:FF26CB54-7B2F-493C-A317-059BC9838109)(model:19A404)(SyncTimestamps:SeeFile) |
+| TextReplacements.db | TextReplacements | (omw:On_my_way!) |
+| triald.db | Logging | SeeFile |
+| trust_analytics.db | Timestamps | 2022-01-21T17:27:58.372GMT-05:00 |
+| utils.db | LotsOfGeolocation | Seefile |
+| _ATXDataStore.db | Logging | SeeFile |
+| _ATXInfoSuggestionStore.db | Logging | SeeFile |
+| adc3_odt.db | MediaBoxInfo | (session_start:1642803615) |
+| AP.db | Timestamps | SeeFile |
+| applicationState.db | Applications | com.apple.xxx,com.google.Gmail,com.hammerandchisel.discord,com.toyopagroup.picaboo,com.moxco.bumble,com.atebits.Tweetie2,com.reddit.Reddit,org.whispersystems.signal,com.wearezeta.zclient.ios,com.alltrails.AllTrails,ru.appscraft.CollectorGame,com.gma.water.sort.puzzle,com.chess.iphone |
+| authorization.db | Authorization | (com.bumble.insign:name,email)(com.moxco.bumble:name,email) |
+| Bookmarks.db | Bookmarks | (Tracfone:http://m.tracfone.com/)(iPhoneUserGuide:https://help.apple.com/iphone/guide/)(Apple:https://www.apple.com/)(Bing:https://www.bing.com/)(Google:https://www.google.com/?client=safari&channel=iphone_bm)(Yahoo:https://yahoo.com/) |
+| cache_controller.db | CacheFiles | SeeFile |
+| cache_encryptedB.db | NetworkingLocations | SeeFile |
+| CellularUsage.db | CellularSubscriberInfo | (SubscriberID:89148000007077222202(SubscriberMDN:+19732941683) |
+| ckks_analytics.db | TimestampLogs | SeeFile |
+| ClassKit.db | ManagementInfo | apple_school_manager |
+| client.db | OSInfo&Timestamps | SeeFile |
+| CloudTabs.db | Links&Model | iPhone8,(75B3ECB7-70D4-4AAA-A49B-A85279D03233,D941817D-FC8E-4ADE-A0B6-9CB92D1EB948,Bed-Bath-&-Beyond:-Bedding,-Bathroom-Sets,-Cookware,-Home-Decor,-Wedding-&-Gift-Registry,https://www.bedbathandbeyond.com/,0,0,0,E17BBAF8-4102-4828-BC33-442B1EAF89D1)(7383072C-81DD-4477-B5E5-068C70B6DCFC,D941817D-FC8E-4ADE-A0B6-9CB92D1EB948,My-Computer-Was-Hacked!-3-Things-To-Do-Immediately-The-Missing-Report-https://preyproject.com/blog/en/my-computer-was-hacked-3-things-you-should-do/,0,0,0,E17BBAF8-4102-4828-BC33-442B1EAF89D1) |
+| com.apple.MobileBluetooth.ledevices.other.db | SeenBluetooth | SeeFile |
+| com.apple.MobileBluetooth.ledevices.paired.db | PairedBluetooth | None |
+| contentManagerDb(dup).db | ImageLinks | SeeFile |
+| contentManagerDb.db | ImageLinks | SeeFile |
+| data(dup).db | AchievementData | (Grand_Collector,You_received_daily_bonus_--100_coins.,0,1642804197,0,info,daily_bonus)(Grand | Collector,You_received_bonus_50_coins_for_achievement-50-points.-0-1642803197-0-info-score_bonus)(Grand | Collector,You_received_bonus_50_coins_for_achievement-100-points.-0-1642803197-0-info-score_bonus) |
+| data(dup).db | UserInfo | (username:Darkest_Meerkat_0107)(device_id:0306daeaf83075da5346dfdd0bc0cda3)(gc_id:U:a3b375ee71aa52268a135b8e74d20105) |
+| data.db | Messages&Attachments | SeeFile |
+| domain_shard_items.db | DomainswExpiration | SeeFile |
+| GEOConfigStore.db | GeoLocationInfo | "Burlington,VT",SeeFile |
+| HistorywStatuscodes | (https://www.google.com/search?q=plant+shops+near+me&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari)(https://www.google.com/search?q=plant+shops+near+me&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari&dlnr=1&sei=5d7iYf6jKZKtptQP_-GIwAE)(https://www.google.com/search?q=plant+shops+near+me&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari&dlnr=1&sei=5d7iYf6jKZKtptQP_-GIwAE#dlnr=1&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:8816168392005291455,ru_gwp:0%252C7,ru_lqi:ChNwbGFudCBzaG9wcyBuZWFyIG1lIgOQAQFIzoSx_euAgIAIWicQABABGAAYAhgDIhNwbGFudCBzaG9wcyBuZWFyIG1lKgYIAxAAEAGSAQ1nYXJkZW5fY2VudGVymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5aYXpkeFgzRkJSUkFCqgETEAEqDyILcGxhbnQgc2hvcHMoAA,ru_phdesc:omCu5JhdcOw,trex_id:p1NnU)(https://maps.google.com/maps/dir//472+Marshall+Ave,+Williston,+VT+05495/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cca78fdb4999e8b:0x7a59527145808dbf?entry=s&sa=X)(https://www.google.com/maps/dir//472+Marshall+Ave,+Williston,+VT+05495/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cca78fdb4999e8b:0x7a59527145808dbf?entry=s&sa=X)(https://maps.app.goo.gl/?utm_campaign=ml_promo&pcampaignid=ml-dv2&apn=com.google.android.apps.maps&amv=965100030&link=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%2F472%2BMarshall%2BAve%2C%2BWilliston%2C%2BVT%2B05495%2F%4044.4443318%2C-73.1208343%2C15z%2Fdata%3D!4m7!4m6!1m1!4e2!1m2!1m1!1s0x4cca78fdb4999e8b%3A0x7a59527145808dbf!3e0%3Fentry%3Dml&isi=585027354&ibi=com.google.Maps&ius=comgooglemapsurl&pt=9008&mt=8&ct=ml-dv2-d5-en&efr=1)(https://www.bedbathandbeyond.com/)(https://www.google.com/search?q=when+does+bed+bath+and+beyond+close&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari)(https://www.google.com/search?q=when+does+bed+bath+and+beyond+close&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari#sbfbu=1&pi=when%20does%20bed%20bath%20and%20beyond%20close)(https://www.google.com/search?q=whatsmyip.com&client=safari&hl=en-us&ei=MiXkYc-ZMLOfptQPgvCg2Ak&oq=whatsmyip.com&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBwgAEIAEEAoyBggAEAoQHjIECAAQHjIGCAAQChAeMgQIABAeOgcIABBHELADOg0ILhDHARCjAhCwAxBDOgcIABCwAxBDOg4IABCPARDqAhCMAxDlAjoFCAAQkQI6DgguEIAEELEDEMcBENEDOgsILhCABBDHARCjAjoOCC4QgAQQsQMQxwEQowI6CwguEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoECAAQQzoLCC4QgAQQxwEQrwE6BwgAELEDEEM6CAgAEIAEELEDOgoIABCxAxCDARBDOgcILhCABBAKOggIABCxAxCDAToLCAAQgAQQsQMQgwE6BAgAEAM6CAgAEIAEEMkDOgUIABCSAzoLCAAQgAQQsQMQyQM6BwgAELEDEAo6CggAELEDEIMBEApKBAhBGABQ7A9YuEdg4lBoCnABeACAAasBiAGlDJIBBDE0LjOYAQCgAQGwAQ_IAQvAAQE&sclient=mobile-gws-wiz-serp)(https://www.google.com/search?q=youtube&client=safari&hl=en-us&ei=rxrrYZKbA4TL_QaIpJ6gDg&oq=youtube&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAMyEAguELEDEIMBEMcBENEDEEMyCAgAELEDEJECMgUIABCRAjIICAAQgAQQsQMyBQgAEIAEMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDOggIABCABBCwAzoICAAQsAMQkQI6CQgAELADEAcQHjoJCAAQsAMQChAeOgcIABCwAxAeOgkIABCwAxAIEB46AggpOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6CAguEIAEELEDOgcIABAKEJECOgcILhCxAxBDOgUILhCABDoNCAAQsQMQgwEQsQMQQzoHCAAQsQMQCjoECAAQCkoECEEYAVCpDFiDL2DQgwFoBnAAeAGAAeQGiAGZG5IBCzAuOC40LTIuMS4xmAEAoAEBsAEByAEPwAEB&sclient=mobile-gws-wiz-serp)(https://m.youtube.com/)(http://ttlw.co/hZWOrxQ)(https://www.totalwireless.com/collectminpinpromo?utm_source=ret&utm_medium=sms&utm_campaign=19160_ret&utm_content=WRR_19160A_0L1C1S1_03_SP&utm_term=437836267006721187) |
+| History(dup).db | TagsAndMore | SeeFile |
+| keychain-2.db | Keys | SeeFile |
+| notificationAndSuggestionDB.db | NotifApps&Timestamps | SeeFile |
+| observations(dup).db | ObservedDomains | doubleclick.net,rayjump.com |
+| SafariTabs.db | Keywords,Bookmarks,Links | SeeFile |
+| SiriAnalytics.db | EventswTimestamps | SeeFile |
+| sms.db | SMSChats | 23081,+18622176888,78156,78644,52181,611611,naomakile3zro@outlook.com,Seefile |
+| storeSystem.db | Applications | (com.reddit.Reddit,Reddit)(com.hammerandchisel.discord,Discord)(com.google.Gmail,Gmail)(org.whispersystems.signal,Signal)(com.toyopagroup.picaboo,Snapchat)(com.moxco.bumble,Bumble)(com.atebits.Tweetie2,Twitter) |
+| storeSystem.db | StoreItemData,PreciseVersions | SeeFile |
+| primary.docobjects | SnapUsers | ariannadaisyyyy,debbie7182005,ladykennedy11,acv_1024,scruzgscott13,mikaela_janesa,tinamelton3907,patrick_bentl22,teamsnapchat,kellybrity,khennessey69,amandaavillaggi,simo2209,mela-lovee,troymazanek26,montanarispoli,nscanlon86,tommywarb,andrewtirelli,ladyleighton,arianabo,mrampelli10,nehmegirl,cathynicoletti,kelcey2313,zackmessick,mustacherides1,iamfatandgreek,mgoropeuschek,b_gilmore4702,rkauf17,eighty1bottles,italianhotty188 |
+| CurrentLog.EPSQL | BatteryInfo | SeeFile |
+| CurrentPowerlog.PLSQL | ApplicationInfo&Timestamps | SeeFile |
+| chrono.sql | WidgetExtensions&Metadata | SeeFile |
+| Accounts3(dup).sqlite/Accounts3.sqlite | Zusername/ZaccountDescription | pbentley0107@gmail.com |
+| Accounts3(dup).sqliteAccounts3.sqlite | LoginServiceswLoginTypes | SeeFile |
+| AllTrails.sqlite | UserInfo | (Patrick,Bentley,en,https://www.alltrails.com/invite/3OM4W4,patrick-bentley-9),Seefile |
+| Cache.sqlite | GeoLocation&MacADDRS | SeeFile |
+| com.apple.KeyValueService-Production.sqlite | Base64Data | SeeFile |
+| DeviceAnalyticsModel.sqlite | NetworkInfo | (SSIDs:ChamplainPSK,Philatelist_Connextion_2.4)(MAC:00:00:5e:00:01:86) |
+| healthdb.sqlite | AccountInfo | SeeFile |
+| ThreeBars.sqlite | Network&MAC | SeeFile |
+| user_model_database.sqlite | Data | (tium.totalWordsTyped:124)(tium.totalWordsAutocorrected:30)(tium.totalWordsFromCandidateBar:13) |
+| ServiceWorkerRegistrations-6.sqlite3 | Links | SeeFile |
+| RemoteConfig.sqlite3 | RedditInfo | SeeFile |
+| modelCache.sqlite3 | TwitterInfo&SearchValues | (patrick_bentley,patrick,patrickbentley,bentley),Seefile |
+| Calendar.sqlitedb | UserInfo | (PatrickBentley:mailto:pbentley0107@gmail.com) |
+| scribe.2.sqlite-sqlite | UserInfo | Patrick01627276-664494319210515
+
+</details>
+  
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  
 <details>
 <summary>ALL</summary>
 <details>
@@ -829,13 +899,13 @@ Generic webpage caching.
 <details>
 <summary>cache-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>cache-wal</summary>
 <br>
-SQLite Data.
+SQLite WAL File.
 </details>
 
 <details>
@@ -901,13 +971,13 @@ SQLite3 DB.
 <details>
 <summary>cloudphotodb-shm</summary>
 <br>
-Unknown Data Formats.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>cloudphotodb-wal</summary>
 <br>
-Unknown Data Formats.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1065,13 +1135,13 @@ SQLite3 DB.
 <details>
 <summary>dat-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>dat-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1095,13 +1165,13 @@ Size 0
 <details>
 <summary>db-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>db-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1179,13 +1249,13 @@ SQLite3 DBs.
 <details>
 <summary>docobjects-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>docobjects-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1233,13 +1303,13 @@ SQLite3.
 <details>
 <summary>EPSQL-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>EPSQL-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1397,12 +1467,6 @@ Unknown Data Format.
 </details>
 
 <details>
-<summary></summary>
-<br>
-Binary Plist.
-</details>
-
-<details>
 <summary>HEIC</summary>
 <br>
 HEIC images. Contain imgs of woods, starwars helmet, and building.
@@ -1417,7 +1481,7 @@ Unknown Data Format.
 <details>
 <summary>hfd-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1695,13 +1759,13 @@ SQLite3 DBs.
 <details>
 <summary>kgdb-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>kgdb-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -1767,13 +1831,13 @@ SQLite and Binary Plist format local storage.
 <details>
 <summary>localstorage-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>localstorage-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -2130,13 +2194,13 @@ SQLite3 Data.
 <details>
 <summary>PLSQL-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>PLSQL-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -2484,13 +2548,13 @@ SQLite3 DBs.
 <details>
 <summary>sqlite3-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>sqlite3-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -2502,19 +2566,19 @@ SQLite3 DBs.
 <details>
 <summary>sqlitedb-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>sqlitedb-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
 <summary>sqlite-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
@@ -2526,31 +2590,31 @@ SQLite3 DB.
 <details>
 <summary>sqlite-sqlite-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>sqlite-sqlite-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
 <summary>sqlite-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
 <summary>sql-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>sql-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -2562,7 +2626,7 @@ Unknown Data Format.
 <details>
 <summary>state</summary>
 <br>
-Logging & Binaey Plists.
+Logging & Binary Plists.
 </details>
 
 <details>
@@ -2586,13 +2650,13 @@ SQLite3 DB.
 <details>
 <summary>storedata-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>storedata-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -2604,13 +2668,13 @@ Storekit configuration.
 <details>
 <summary>store-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>store-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -2874,7 +2938,7 @@ Unknown Data Format.
 <details>
 <summary>txt</summary>
 <br>
-Text files.0
+Text files.
 </details>
 
 <details>
@@ -3012,13 +3076,13 @@ SQLite3 DB.
 <details>
 <summary>wiredatabase-shm</summary>
 <br>
-Unknown Data Format.
+SQLite SHM File.
 </details>
 
 <details>
 <summary>wiredatabase-wal</summary>
 <br>
-Unknown Data Format.
+SQLite WAL File.
 </details>
 
 <details>
@@ -3096,3 +3160,5 @@ Applications and themes.
 </details>
 
 ^^ Quick overview of all 474 filetypes. ^^
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
