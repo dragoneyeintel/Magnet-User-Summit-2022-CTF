@@ -1,3 +1,199 @@
+Note that 'Token' and 'Key' are used interchangably. Also note that these tokens which have been carved from binary plist files may have an extra character as we are reading bplist with a text editor.
+
+<details>
+<summary>Binary Plist</summary>
+  
+| Location | Parameter | Value |
+| --- | --- | --- |
+| com.apple.notes.analytics | Token | 52B680D4-C17E-402A-BD97-6AAB1A34DA5D |
+| configuration-v1.archive | URL | https://app-icons.apptentive.com/59384a88c625b62869000026_1548266365.png |
+| conversation-v1.archive | AllTrials(V14.3.1)(TentativeVersion_T6524T15.0) | User:Patrick_Bently,Email:pbentley0107@gmail.com,HW-ID:DDB0353F-4077-49A5-AD01-45683E0176BD |
+| PaymentWebServiceContext.archive | Locations | Connecticut,Delaware,District-of-Columbia,...(Point_Being_CT_1st) |
+| com.apple.security.cloudkeychainproxy3 | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| com.apple.cmfsyncagent | Token | 52B680D4-C17E-402A-BD97-6AAB1A34DA5D |
+| com.apple(dup).cmfsyncagent | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| plain-metadata.config | UUIDs | (Air_Conditioner:18DDD63A-27F9-4341-B59B-759D3D114586)(Air_Dehumidifier:1E15B639-DC98-41D4-A394-2E4A1D54AA3A)(AirPort:8BFB739C-1E09-4F7B-ABB8-DD7BADD0E8A9)(Apple_TV:F6D2A2AC-3A6E-4E6F-8196-678ABE909D8E)(Audio_Reciever:BE15659C-3CE6-4FD0-B152-BCDB488446C6)(Bridge:61102194-9993-48BF-A1EF-6C7DC50F0C01)(Door:DD4DE411-8F01-44EE-866A-1F96144DC1B6)(IPCamera:C9EE63DB-2FF7-4514-826A-2FC2F0D4C9F0)(WiFiRouter:337635B4-552A-48AD-A38D-DD2D5E826C9A)etc... |
+| com.apple.CoreSuggestions | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| com.apple.coretelephony | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| subject.data | Token | 86885453-76B5-4356-B5DC-19D4F13F2EE7 |
+| Data(dup).data | Token | 5CA9C191-0ED3-405B-8A68-BB759255EEF4O |
+| Data.data | AllTrails,Inc.T6734V14.4.0_,2022-01-21T21:15:27Z | pbentley0107@gmail.com,000548-08-f13aace4-469a-4e18-b925-29a5dad92ee1,com.apple.AppStore_¯10|date=1642798800000&sf=143441&pgtp=Search&pgid=1e5421bb-f2f9-43c1-a66b-4972a2336f4a&prpg=Genre_179183&ctxt=Search&issrch=1&imptyp=lockup&kind=iosSoftware&itpltyp=PI3&lngid=1 |
+| .store(dup).db | DeviceBootTime | 2022-02-14T18:18:27Z |
+| .store(dup).db | Misc | CFD283EF-2852-4E1D-98F5-8EF72A9334DA:ABPerson,6F59909B4532EAE77A9E1DFF53D8B25B6D275AD8F230E5Bý``Your_ð_´ð%_to_Gardener's_Supply_Company,_472_Marshall_Ave,_Wil• |
+| .store.db | DeviceBootTime2 | date>2022-02-03T17:05:04Z |
+| store(dup).db | åDeviceBootTime3 | date>2022-02-14T18:18:27Z |
+| swc.db | 404Error | {\"cause\":\"dial_tcp:_lookup_webdev.alltrails.com_on_172.26.0.2:53:_no_such_host\"} |
+| pending-metrics(dup).event | SnapVersion | Snapchat/11.62.0_(com.toyopagroup.picaboo;_v11.62.0.36) |
+| AlltrailsInfo | 2022-02-14T18:19:06.946+0000Z2022-02-14_iPhone10,1ZiOS_15.0.2AllTrails/14.3.1_(com.alltrails.AllTrails;_v6524;_iOS_15.0.2;_arm64v8)_Mapbox/6.4.1 |
+| procesed.notif.id2022-02-10 | Token | 54a19e05-f072-456b-96a7-f67d5e12fad6:bigquery |
+| procesed.notif.id2022-02-11 | Token | eb2d946c-42cf-402e-bce1-752868f4bdf3:bigquery |
+| persona.kb | Token | 3862409B-690E-4050-8366-17BEA2AA555B |
+| com.apple.mail.list.UnsubscribeInfo | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| MREExceptionManual_homed_2022-02-14_122137.vcYva1.lite_diag | Version | Version_15.0.2_(Build_19A404) |
+| com.apple.passbook.locations | Token | 52B680D4-C17E-402A-BD97-6AAB1A34DA5D |
+| com.apple.eventkit.locations | Token | 52B680D4-C17E-402A-BD97-6AAB1A34DA5D |
+| com.apple.mail | Token | 52B680D4-C17E-402A-BD97-6AAB1A34DA5D |
+| com.apple.Maps | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| PPTTestProactiveData.mapsdata | Token&Locations | 73F21A50-C99E-4DB0-82C8-661B2B1DB8E9,Subway,_42_St_Shuttle,https://www.yelp.com/biz/statue-of-liberty-new-york-3,96D85A22-2F61-42F3-849A-C8FA6AFD4963,requestType=UkVRVUVTVF9UWVBFX1NFQVJDSA==&searchString=R3JhbmQgY2VudHJhbA==&viewport=bWFwX3JlZ2lvbiB7CiAgc291dGhMYXQ6IDQwLjY5NTAxNDU5MTk2Nzc1NQogIHdlc3RMbmc6IC03NC4wMTM0NzQ4OTUzOTM0NzIKICBub3J0aExhdDogNDAuODcxMzc5NDMyNDYzMzcxCiAgZWFzdExuZzogLTczLjg5MzM4MDE3OTU2NTI4NAp9CnRpbWVfc2luY2VfbWFwX3ZpZXdwb3J0X2NoYW5nZWQ6IDEwCm1hcF90eXBlOiBNQVBfVFlQRV9TVEFOREFSRAo=&appId=Y29tLmFwcGxlLk1hcHM=,and_more |
+| conversation-v1.meta | ConversationIdentifier&Tokens | 61eb2f9434094b7196052c9b_,C7F5B649-258C-4A83-A7E7-34B5136340C9,2DB6FA12-C8D4-458A-89EF-1A691E161BDB |
+| GKLocalPlayer.offline | UserInfo | BentleyWPatrick,A:_f27f493afedb652d5c3d1b3ea97a1ff0,Patrick_Bentley,T:_6da59d143419c5fcb9023c7834bacc9f,U:a3b375ee71aa52268a135b8e74d20105,pbentley0107@gmail.com |
+| app.featureswitches.4.Patrick01627276-664494319210515 | AccountIdentifier | Patrick01627276-664494319210515,https://go.cb-w.com/xoXnYwQimhb?cb_url=https%3A%2F%2Fton.twitter.com%2Ftwitter-assets%2Ftw-wallet%2Fverify%2Findex.html%3Fc%3D,7d8cfb07685f01bdcb7726563f0b8c452f21e3dc_,ca0888be53a128a7cb219481b920886e_,GwqMCWNvbW11bml0eRsBjAIqKjEAIgAEbWVudRsBjAIqKhsBjAN0YXAxACIAIgABKhsCjA5jb21tdW5pdHlfY2FyZBsBjAIqKjEAIgAEaG9tZRsBjAIqKjEAIgAiABhjb21tdW5pdHlfYWdyZWVfYW5kX2pvaW4bAYwBKjEAIgAMbm90aWZpY2F0aW9uGwGMAioqMQAiAAtkYXNoX2J1dHRvbhsBjAIqKjEAIgACKiobBIwJY29tbXVuaXR5GwGMAioqMQAiAAtjb21tdW5pdGllcxsBjAIqKjEAIgAYY29tbXVuaXR5X2FncmVlX2FuZF9qb2luGwGMASoxACIAD2ltYWdlX3NsaWRlc2hvdxsBjAIqKjEAIgAiAA9yZXBvcnRlZF90d2VldHMbAYwCKiobAYwKaGlkZV90d2VldBsBjAEqMQAiACIAIgALY29tbXVuaXRpZXMbAYwCKioxACIABHNvbWUbAYwHcGF0dGVybhsBjAEqMQAiACIAAA== |
+| wifid.plist | MACAddrs | 38:17:c3:6c:da:92_24:de:c6:bf:ff:7b_00:16:fb:b2:b6:20_FamilyHotspotPreferences_c8:b5:ad:d2:f0:72_c8:b5:ad:d3:5f:02_00:24:6c:0e:f9:0b_ac:a3:1e:e2:aa:a3_24:de:c6:bf:fe:fb_UserNotificationBlacklist_18:64:72:84:b1:f0_00:24:6c:29:ae:5c_00:24:6c:10:37:93_94:b4:0f:2c:f1:e2_ac:a3:1e:e2:a9:e0_c8:b5:ad:d3:5f:53_ac:a3:1e:e2:ab:b3_38:17:c3:6d:08:b2_c8:b5:ad:d3:5e:d2_ac:a3:1e:e2:ad:c3_b4:5d:50:60:e9:c3_ac:a3:1e:e2:a8:e0_c8:b5:ad:d3:5f:12_ac:a3:1e:e2:a7:03_38:17:c3:6b:2c:92_38:17:c3:6c:0f:12_ac:a3:1e:e2:aa:83_94:b4:0f:2c:f1:f2_ac:a3:1e:e2:ae:d3_ac:a3:1e:e2:a9:f0_ac:a3:1e:e2:ad:03_ac:a3:1e:e2:c7:b3_ac:a3:1e:e2:ab:c3_18:64:72:84:bd:d3_ac:a3:1e:e2:a8:f0_ac:a3:1e:e2:a7:13_c8:b5:ad:d3:59:73_38:17:c3:6c:9a:62_ac:a3:1e:e2:ae:13_18:64:72:84:b5:d3_c8:b5:ad:d3:4d:d2_c8:b5:ad:ba:33:52_18:64:72:84:be:f0_ac:a3:1e:e2:ad:13_ac:a3:1e:e2:ab:d3_c8:b5:ad:d3:5e:f2_ac:a3:1e:e2:aa:03_c8:b5:ad:d2:f1:12_ac:a3:1e:e2:aa:53_38:17:c3:6c:9a:72_24:de:c6:bf:fe:f3_00:24:6c:0e:f9:03_6c:f3:7f:16:fb:8b_d8:c7:c8:e7:b3:bc_00:24:6c:29:ae:54_00:24:6c:0e:f7:93_44:1e:98:43:cd:0 |
+| .com.apple.mobile_container_manager.metadata(dup).plist | Tokens | 3862409B-690E-4050-8366-17BEA2AA555B_FA818AE8-6C8D-41A1-BA05-67F0BF327560 |
+| .com.apple.mobile_container_manager.metadata.plist | Token | 218E8D15-28F5-43E2-8CE7-5A2581A6DC3F |
+| .keys_map.plist/.expiration_dates.plist | BurritoMan | https://media1.giphy.com/media/cXCVTR1wUn1a8/200_s.gif?cid=32a888cc2a8fd41453fd1d2a5f6560b06f34ad65c8f624ec&rid=200_s.gif&ct=g3 |
+| 02ECCC6E-A21D-41B4-99A8-7E82915033C3.plist | Seed | A02ECCC6E-A21D-41B4-99A8-7E82915033C3 |
+| 3C5ADC3A-B1E7-4832-8E89-3BE91F60275F.plist | Seed | 13C5ADC3A-B1E7-4832-8E89-3BE91F60275F/Snapchat.app |
+| 4A8934E4-C78E-44A4-8FC7-A7C65D53E4E0.plist | Seed | 4A8934E4-C78E-44A4-8FC7-A7C65D53E4E0 |
+| 5E64A164-E835-46DC-912B-29291D8F95D6.plist | Seed | 5E64A164-E835-46DC-912B-29291D8F95D6/Data.data |
+| 6BB72347-B23D-435B-AEDA-31A4AC13BF7B.plist | Seed | 6BB72347-B23D-435B-AEDA-31A4AC13BF7B/extract |
+| 6E8F5504-D263-4F06-80A8-F6DD56D0908C.plist | Seed | A6E8F5504-D263-4F06-80A8-F6DD56D0908C/CFNetworkDownload_mhqKOl.tmp |
+| 8F414CA3-C28C-416C-8F68-0BDD3E708FE3.plist | Seed | 8F414CA3-C28C-416C-8F68-0BDD3E708FE3/extract |
+| 9D8C3E01-8CE5-422F-ACA0-EAD9EB1BA7FF.plist | Seed | 9D8C3E01-8CE5-422F-ACA0-EAD9EB1BA7FF/Reddit.app |
+| 11E7ED7A-12CC-4A5B-9B55-1F95E89CB7C2.plist | Seed | 011E7ED7A-12CC-4A5B-9B55-1F95E89CB7C2/Twitter.app |
+| 40B1E07E-322C-455F-8BED-6046317ED1E9.plist | Seed | 40B1E07E-322C-455F-8BED-6046317ED1E9/Data.data |
+| 49A46F8A-86F1-4F17-B2FF-2F02E6009997.plist | Token | 49A46F8A-86F1-4F17-B2FF-2F02E6009997 |
+| 073BB44F-E18A-4449-A8C5-024509A43DC6.plist | Seed | 073BB44F-E18A-4449-A8C5-024509A43DC6/Data.data |
+| 82F94C4C-B096-4E21-868A-109682CC396F.plist | Seed | 82F94C4C-B096-4E21-868A-109682CC396F/Data.data |
+| 120A7254-0076-4B5F-8A12-46587C1A227F.plist | Seed | A120A7254-0076-4B5F-8A12-46587C1A227F/CFNetworkDownload_zhDj2M.tmp |
+| 847D2693-F2AE-4849-A40F-E021D786B0AE.plist | Seed | A847D2693-F2AE-4849-A40F-E021D786B0AE/CFNetworkDownload_Jfm7s3.tmp |
+| 9945BD68-1EEC-41A4-875E-A5F3037C3DA9.plist | Seed | 9945BD68-1EEC-41A4-875E-A5F3037C3DA9/extract |
+| 2077176B-43C7-4298-84D9-93712B9C8D0F.plist | Seed | A2077176B-43C7-4298-84D9-93712B9C8D0F/CFNetworkDownload_g7wWdW.tmp |
+| A0FF7870-18F8-4DAA-B5FE-29043E01084C.plist | Seed | AA0FF7870-18F8-4DAA-B5FE-29043E01084C/CFNetworkDownload_099zb0.tmp |
+| A307A64F-F611-473E-B963-6A6002DB360F.plist | Seed | 2A307A64F-F611-473E-B963-6A6002DB360F/AllTrails.app |
+| AB594CBB-883B-438C-A106-40C25CC15963.plist | Seed | AAB594CBB-883B-438C-A106-40C25CC15963/CFNetworkDownload_EDuH4J.tmp |
+| AccountInformation.plist | UUIDs | (DAAccountPersistentUUID:4C9814FE-344E-4B7C-839F-F98B92F4F6AE)(DAAccountPersistentUUID:B8CB629A-243F-4009-A064-7515E4479112)(DAAccountPersistentUUID:0337B33F-E053-4F90-8D20-2BE39BF255A6) |
+| activation_record.plist | Certificates | SeeFile |
+| AD3DEB55-633D-4EF6-8F5D-912AA9FB3452.plist | Seed | AAD3DEB55-633D-4EF6-8F5D-912AA9FB3452/CFNetworkDownload_O4p4RZ.tmp |
+| AD8BC3F2-7866-4C77-8C74-F7344F7762E5.plist | Seed | .AD8BC3F2-7866-4C77-8C74-F7344F7762E5/Data.data |
+| analyticsd.plist | OS | "osVersion":"19A404-GM" |
+| app_usage_database.plist | ApplicationUseage | SeeFile |
+| assetUUIDForPath.plist | StoreUUID | 5D360382-CEAB-41C8-B5E8-B045EE5CFF58 |
+| atc.plist/assistant_service.plist | OS | iOS/15.0.2_model/iPhone10,1_hwp/t8015_build/19A404 |
+| AttachmentsList(dup).plist | Attachments | file:///var/mobile/Library/UserNotifications/F6C59A01-8506-44B5-866A-8CB9301E27AA/Attachments/3508d0312019eca4f3c8e60e768562d8fe626ea3.jpeg&file:///var/mobile/Library/UserNotifications/F6C59A01-8506-44B5-866A-8CB9301E27AA/Attachments/eeed14335dad7c2c2395bc8cd186929ab5b3274c.png |
+| AttachmentsList.plist | Attachments | file:///var/mobile/Library/UserNotifications/2F6D6758-0070-4BBC-8882-6EFCB07F4156/Attachments/1777c6981ba15e2add3cb5d66b0ed8694e12860c.png |
+| auth.plist | Token | A0F770968C580C182DEE1D274D164269 |
+| Bookmarks.plist | Bookmarks | SeeFile |
+| BookmarksSyncMetadata.plist | DeviceUUID | FB2F1569-05D0-41F8-8500-69C04E14089F |
+| cache.plist | NetworkingInfo | (IPv4.Router=100.64.0.1;IPv4.RouterHardwareAddress=ac:1f:6b:6e:20:9d,2022-01-21T22:33:10Z)(IPv4.Router=172.19.64.1;IPv4.RouterHardwareAddress=00:00:5e:00:01:86,2022-02-03T15:44:43Z) |
+| CGA.plist | Modifiers&IDs | SeeFile |
+| CGAKeys.plist | PrivateKey | SeeFile |
+| changetoken.plist | Token | 4CB09D3F-2C21-4676-88D8-D76F3CE179F9 |
+| ChatMessages.plist | Messages | (Hello)(Good_luck)(Thanks)(Oops)(Good_move)(Sorry)(Good_game)(Gotta_go) |
+| CircleCache.plist | username | 17768365815 |
+| ClientEncryptionService.plist | Key&Identifier | (identifier:9ADD3F4F-15AB-48CB-A508-6D27222FA7BC)(key:bIHt+NlXhaFYCsddMF3M8x3C9zyxwrR5y1clXUFyRlk=) |
+| CLSUserDefaults.plist | CrashlyticsUUID | 51E853A2-3669-4C35-94CC-7D6649F1D06A |
+| com.alltrails.AllTrails(dup).plist | Link | https://appboy-images.com/zip_uploads/files/60ccf1ef61126b1d36aade4f/8568be05278029c39f88c404536de03df9022b5f/original.zip?1624044015_ |
+| com.alltrails.AllTrails(dup).plist | SearchHistory | 2022-01-21_171132-0500_Fri,_04_Feb_2022_00:01:41{"objectID":"area-10170694","slug":"parks\/us\/vermont\/east-woods-natural-area","clickTrackingData":{"queryId":"b497c3fc478604bf7445c1fac54920ff","position":2,"objectId":"area-10170694"},"_geoloc":{"lat":44.445450000000001,"lng":-73.19659},"state_name":"Vermont","country_name":"United | States | of | America","popularity":8.5577000000000005,"type":"area","ID":10170694,"name":"East | Woods | Natural | Area"}Ò | ‘ | Ž | ’ | “TtypeUtrailOç{"scope":{"type":"location","title":"East | Woods | Natural | Area","radius":32186.799999999999,"longitude":-73.19659,"zoomLevel":10,"latitude":44.445450000000001},"uuid":"F0AD887C-A42A-43A5-BA23-9B7D394C04F1" |
+| com.apple.accessoryd | Certificate | SeeFile |
+| com.apple.appstored.plist | Token | 7CA05841-9E85-480F-8796-4BBADFE3C50C |
+| com.apple.assetsd.plist | Tokens | 61706673-7575-6964-0040-766F6C756D01,73A83616-9FAE-41CB-81D6-2A1167913B3C |
+| com.apple.BTServer.plist | Email | pbentley0107@gmail.comR15V19A404X |
+| com.apple.commcenter.callservices.plist | CloudID | ac616bf9909067d5a4ed5a335dd1383f2923b590 |
+| com.apple.commcenter.shared.plist | PhoneNo | +19732941683 |
+| com.apple.facetime.bag.plist | Certificate | SeeFile |
+| com.apple.health.shared.plist | HealthkitIdentifier | 80F491C5-4E7C-4847-BD55-31076B4790ED |
+| com.apple.icloud.findmydeviced.plist | Tokens | (UpdateID,5ad792fc-3bee-4536-bbbe-42db26e5fbafV19A404),94a064bb-33df-49cc-af97-244c49a0f803 |
+| com.apple.icloud.fmfd.notbackedup.plist | Error | LostMessage(82c21ff2d481090d) |
+| com.apple.icloud.findmydeviced.watch.notbackedup.plist | AccountID | 17768365815 |
+| com.apple.icloud.fmfd.notbackedup.plist | CompanionDeviceInfo | CompanionDeviceiPhone | 8_$98671465-F99D-4F8F-81D4-EF1BDCCF0AE9 |
+| com.apple.imdsmsrecordstore.plist | Version | Version_15.0.2_(Build19A404) |
+| com.apple.imessage.bag.plist | Certificate | SeeFile |
+| com.apple.imservice.ids.FaceTime.plist | Token | F2B442B1-3BF5-4C1C-B7B7-DB622B80B688 |
+| com.apple.imservice.ids.iMessage.plist | Token | 30982423-2E44-41C7-8588-8D2E67DA6FC0 |
+| com.apple.imservice.SMS.plist | Phone | +19732941683,C0AE0CDE-65EA-42A4-9B51-D0B38E2C34EF |
+| com.apple.ios.StoreKitUIService.plist | BuildVersion | UD20APV19A404_ |
+| com.apple.itunescloud.daemon.plist | AcountDSID | 17768365815 |
+| com.apple.itunesstored.plist | HardwareModel | V19A404UD20AP |
+| com.apple.locationd.plist | OS | iPhone_OS15.0.2/19A404 |
+| com.apple.lsdidentifiers.plist | IdentifierAssociations | SeeFile |
+| com.apple.madrid.plist | Phone | +19732941683 |
+| com.apple.Maps.plist | DrivingTimestamp | 2022-01-21_20:15:04 |
+| com.apple.mediasetupd.defaults.plist | PublicKey | SeeFile |
+| com.apple.MobileBackup.plist | Timestamp | 2022-01-21T17:23:15 |
+| com.apple.MobileGestalt.plist | OS | 90B19FE1-A01D-4BA2-BB1A-B6EBD6B19EBFRLLV15.0.2Uarm64V19A404YiPhone | OS |
+| com.apple.NanoRegistry.plist | RestoreIdentifier | 28BCD870-7609-45BD-81A1-F58D5EBCF95E |
+| com.apple.NanoTimeKit.face.plist | Version | V19A404 |
+| com.apple.networkd.networknomicon.plist | Timestamps | (LastAttempt,2022-02-14T17:58:42Z)(LastRun,2022-02-14T14:41:53Z) |
+| com.apple.osanalytics.submissionStatus.plist | Timestamps | (attempt,2022-02-14T16:37:49Z)(Attempt,2022-02-09T23:06:12Z)(Success,2022-02-04T03:53:28Z) |
+| com.apple.powerd.bdc.plist | FilePaths | BDC_SBC_version1.5_2022-02-14_18:25:44.csv,/var/db/Battery/BDC/BDC_Once_version1.5_2022-01-06_22:40:58.csv_ |
+| com.apple.powerlogHelperd.plist | BootSessionUUID | 8DE4F036-90B9-4BC3-A7A3-042A7D98D163 |
+| com.apple.Preferences.plist | Name | Patrick_Bentley(prefs:root=General%23-64,en-USV19A404) |
+| com.apple.purplebuddy.plist | Version | productVersionV15.0.2 |
+| com.apple.rapport.plist | PhoneModel | iPhone | 8 |
+| com.apple.remoted.plist | UUID | 7B7906DF-FEAB-4BAC-BF73-A15DCBC6C8E1 |
+| com.apple.security.CircleJoinRequested.plist | Timestamp | 2022-02-14T18:30:14Z |
+| com.apple.security.cloudkeychainproxy3.keysToRegister.plist | UUID | 4ADD9ACD-B186-4928-9661-F115486B51A9 |
+| com.apple.sharingd | EmailHash | 3aa47204e6a694cb719387f0ca690dc21ec76ac94252f4a436bbc291c65d7d3d |
+| com.apple.sharingd | IDs | 000548-08-f13aace4-469a-4e18-b925-29a5dad92ee1 |
+| com.apple.sharingd | CACerts | SeeFile |
+| com.apple.springboard.datamigrator.plist | Version | lastBuildVersionV19A404 |
+| com.apple.storebookkeeperd.plist | HardwareModel | V19A404UD20AP |
+| com.apple.TelephonyUtilities | PhoneNo | +19732941683 |
+| com.apple.TelephonyUtilities.sharePlayAppPolicies.plist | Base64BinaryPlist | YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICV8QD19zZXF1ZW5jZU51bWJlchANoQtVJG51bGwIERokKTI3SUxeYGIAAAAAAAABAQAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAaA== |
+| com.apple.voicemail.imap.parameters.plist | VoicemailAddr | (name:9732941683@vzwazc.com)(port:143)(server:wt1lv.imsvm.com) |
+| com.apple.WatchListKit.plist | Version | iphoneV143441R51 |
+| com.apple.wifi(dup).plist | Version | V19A404 |
+| com.chess.iphone(dup) | UserAgent | Mozilla/5.0_(iPhone;_CPU_iPhone_OS_15_0_2_like_Mac_OS_X)_AppleWebKit/605.1.15_(KHTML,_like_Gecko)_Mobile/15E148 |
+| com.gma.water.sort.puzzle.plist | UserAgent | Mozilla/5.0_(iPhone;_CPU_iPhone_OS_15_0_2_like_Mac_OS_X)_AppleWebKit/605.1.15_(KHTML,_like_Gecko)_Mobile/15E148_R83 |
+| com.google.gmp.measurement.plist | Timestamp | Tue,_05_Oct_2021_23:29:52 |
+| com.moxco.bumble(dup).plist | Timestamp | 2022-01-21_21:36:41 |
+| com.reddit.Reddit(dup).plist | Timestamps&Logging | SeeFile |
+| com.wearezeta.zclient.ios(dup).plist | OS | appcenter.iosU4.3.0ZiPhone10,1UAppleSiOSV15.0.2V19A404Uen_US |
+| CurriculumVideos | ChessLinks | SeeFile |
+| data_ark(dup).plist | Model | iPhone8,V15.0.2 |
+| diskcacherepository.plist | Link | https://www.avnet-cyber.com/wp-content/uploads/2017/02/Falling-Numbers-01-low-res-5-sec.mp4 |
+| donations.plist | Phone+Email | +19732941683ViPhone,pbentley0107@gmail.com |
+| E0816607-3E52-47AB-A1D5-62D4E8613DBE(dup).plist | Certificates(Dante_Macbook_Air_M10) | SeeFile |
+| fb_an_config | Link | https://s.update.fbsbx.com/843748/gs?dt=8437481537452023477000TtrueTtrueU30000TtrueQ0UfalseTtrueUfalseR20TtrueT8000U0.96fW2097152R25R10R30TtrueTtrueUfalseS225T1.15Q0_ |
+| g-checkin.plist | GMSLastCheckinTimestamp | 1643936170000 |
+| GoogleService-Info(dup).plist | APILink | https://alltrails-com-api-project-127587500781.firebaseio.com\127587500781_ |
+| GoogleService-Info.plist | APILink | https://chesscom.firebaseio.com[27129061667_ |
+| group.com.google.Gmail.plist | FullEmailMsg | pbentley0107@gmail.com,SeeFile |
+| group.com.hammerandchisel.discord | DiscordInfo | "username":"DesertBusDriver#9827","id":"939011014496776223",SeeFile |
+| group.snapchat.picaboo.plist | SnapchatUsername | patrick_bentl22 |
+| idstatuscache.plist | Email | mailto:pbentley0107@gmail.com,666555977.00127006 |
+| Instabug.plist | Token | 8eeb3513bf6c405cb236bb5341e1f00b |
+| InstalledApps.plist | InstalledApplications | com.apple.iBooks_,com.apple.VoiceMemos_,com.apple.mobilesafari_,com.alltrails.AllTrails_,com.reddit.Reddit_,com.apple.weather_,com.apple.DocumentsApp_,com.apple.mobiletimer_,com.apple.BarcodeScanner_,com.apple.findmy_,com.apple.Preferences_,com.toyopagroup.picaboo_,com.gma.water.sort.puzzle_,com.apple.mobilemail_,com.wearezeta.zclient.ios_,com.apple.Passbook_,com.apple.calculator_,com.apple.mobileslideshow_,com.atebits.Tweetie2_,com.apple.mobilephone^com.apple.Home_,com.apple.stocks_,com.apple.MobileSMS_,com.moxco.bumble^com.apple.Maps_,com.apple.AppStore_,com.chess.iphone_,com.apple.measure_,ru.appscraft.CollectorGame_,com.apple.Translate_,com.apple.facetime_,com.google.Gmail_,com.apple.shortcuts_,com.apple.MobileAddressBook_,com.apple.Magnifier_,com.apple.MobileStore_,com.apple.compass\com.apple.tv_,com.hammerandchisel.discord_,com.apple.Health_,org.whispersystems.signal^com.apple.tips_,com.apple.Music_,com.apple.mobilenotes_,com.apple.camera_,com.apple.mobilecal_,com.apple.Bridge^com.apple.news_,com.apple.reminders_,com.apple.podcasts |
+| itunescloudd.plist | Model | iOS/15.0.2_model/iPhone10,1_hwp/t8015_build/19A404_(6;_dt:157)-143441-1,29-en_US |
+| itunescloudd.plist | ThisIsJustInteresting | http://a1.v.phobos.apple.com/us/r1000/000/Diag/STEM_hd.m4v |
+| iTunesMetadata(dup).plist | iTunesMetadata | (AllTrails,14.3.1,pbentley0107@gmail.com,2022-01-21T21:15:27Z) |
+| iTunesMetadata.plist | iTunesMetadata | (Twitter,8.97,pbentley0107@gmail.com,2022-01-21T20:44:58Z,com.atebits.Tweetie2) |
+| KTConfig.plist | Certificates | SeeFile |
+| KTPublicKeyStore.plist | Certificates | SeeFile |
+| LastBuildInfo.plist | OSInfo | 1983-2021_Apple_Inc.YiPhone_OS_Version | 15.0.2_(Build_19A404) |
+| LastSyncAfterLaunch.plist | Timestamp | 2022-02-14T18:20:01Z |
+| Lens.plist | LinksToInterestingFiles | SeeFile |
+| com.apple.wifi.known-networks.plist | KnownNetworks | ChamplainPSK,SpinnerPlace,Philatelist_Connextion |
+| com.apple.wifi.known-networks.plist | JoinedMAC | (Spinner_Place4:1e:98:43:cd:8),(Philatelist_Connextion44:1e:98:43:cd:c) |
+| log-bb-2022-01-15-stats.plist | Error | BasebandCrash(5E305DE8-7AE6-460F-91DB-43BE50A9EB1C,Date=2022-01-15;AP=19A404;BB=7.02.00;Model=D20AP;Machine=iPhone10,1,16:38:18_-0500_ST_[clm]_disconnect:_duration=0;cause=kNoError;modemErr=1011;rat=1001) |
+| MainMenuGuestOptions.plist | ChessOnTheTV | SeeFile |
+| MCRestrictions.plist | WhitelistedLocale | RUSRGBRAURCA |
+| MigrationInfo.plist | Version | 90B19FE1-A01D-4BA2-BB1A-B6EBD6B19EBFV15.0.2,1983-2021_Apple_Inc.YiPhone_OS_Version_15.0.2_(Build_19A404) |
+| mobileCPL.plist | VersionToken | SeeFile |
+| NetworkInterfaces.plist | Version | 9UModelZInterfaces[__VERSION__UD20AP |
+| OTAPKIContext.plist | MobileAssetLastCheckIn | 2022-01-10T17:28:28Z |
+| PersonaList.plist | Tokens | 3862409B-690E-4050-8366-17BEA2AA555B,9DA37C44-9277-4E2A-B926-543990917ED0,9157DB6F-4B52-4FC8-A5AE-B0D384822C98 |
+| preinstall-is-complete.plist | OS | BuildVersion:19A404,ProductVersion:15.0.2 |
+| SafariTabsSyncMetadata.plist | DeviceUUID | 301AACDA-D894-4159-A260-96819715B3FC |
+| savedConfiguration.plist | Config | MacBookProZMacBookAir |
+| SearchDescriptions.plist | GoogleSearch | how+to+fix+a+computer+from+being+hacked,https://www.google.com/search?q=what+to+do+if+you+get+hacked |
+| ServerErrorCodes.plist | ChessErrors | SeeFile |
+| stats.plist | Timestamps | WGPS-fixZEph-update__2/14/22,_1:16_PM_,2/14/22,_11:35_AM |
+| SyncEngineMetadata.plist | Certificates | SeeFile |
+| SystemAppInstallState.plist | InstalledApps | SeeFile |
+| tasks(dup).plist | UserAgent | CFNetwork/1312_Darwin/21.0.0 |
+| unlockablesCommonDataStore_v2.plist | SnapUnlockables | https://cf-st.sc-cdn.net/d/NAdlH1YxC4Mls6yP2jrJG.1000?mo=Gk4aFhoAGgAyDAQFBw0PEXJ0dnd7fVAaYAFaDUdlb2ZpbHRlclByaW2iAQsI6AciBgoCSAISAKIBCAgBIgQKAkgBogELCP4HIgYKAkgCEgA%3D&uc=26,https://geofilter.storage.googleapis.com/png/13803d9e-3c0b-4777-9900-619fa75f5304.trimmed.png |
+| user.plist | SnapInfo | Username:patrick_bentl22,UID:4b7806c0-7381-4984-b53b-cb36fbecbb0e,laguna_id:8b9f68418ab04491ae7f5e26ea736e01 |
+| VersionedSectionInfo.plist | Certificates | SeeFile |
+| wifid.plist | NeworkingInfo | SSID:ChamplainPSK |
+| 6AXK3875RJ.com.gma.water.sort.puzzle | Token | 34C4E269-387E-4A26-A80C-29DD8476A0E4 |
+| friend.responses | AddedUsers | 223372036854775808|1644624668069 |
+| friend.responses | SnapACCInfo | Name:Patrick_Bentley,Username:patrick_bentl22,token:4b7806c0-7381-4984-b53b-cb36fbecbb0e |
+| app.state | DiscordTimestamp | {"system_boot_timestamp":"2022-02-03T17:05:01.000Z","is_debugging":false,"release_name":"discord_ios-29781","is_active":false,"os_version":"15.0.2","was_terminated":false} |
+| MapsSuggestionsManager_Maps.storage | Locations | Gardener's_Supply_Company_-_Williston,https://www.yelp.com/biz/gardeners-supply-williston-garden-center-and-outlet-williston-3,https://www.yelp.com/biz/gardeners-supply-williston-garden-center-and-outlet-williston-3,472_Marshall_AveZWilliston,_VT_05495Z
+  
+</details>
 
 <details>
 <summary>ALL</summary>
@@ -1196,6 +1392,12 @@ Default Siri configs.
 <summary>header</summary>
 <br>
 Unknown Data Format.
+</details>
+
+<details>
+<summary></summary>
+<br>
+Binary Plist.
 </details>
 
 <details>
