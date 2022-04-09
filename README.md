@@ -186,13 +186,39 @@
 A custom script was used to extract all of the files and sort them by type.
 See iPhone File Extensions File to view all extensions.
 
-<details>
-<summary>Important Findings</summary>
+### Magnet & Autopsy Findings
 
 <details>
-<summary></summary>
-<br>
-Test
+<summary>Discord Messages</summary>
+
+| User | Message | Timestamp | Found Location |
+| --- | --- | --- | --- |
+| @DesertBusDriver#9827 | dam u got scammed lol | 2/6/2022 4:42:26 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | best buy more like bad buy | 2/6/2022 4:42:43 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | amirite | 2/6/2022 4:42:45 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | Yes lol. What I do for server now? | 2/6/2022 4:43:58 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | go ahead and make a new folder called minecraft and drag the papermc into it | 2/6/2022 4:44:44 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | Done. Can we do a call? | 2/6/2022 4:46:06 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | yeah sure | 2/6/2022 4:46:18 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | https://cdn.discordapp.com/attachments/939011014496776223/939743883972206675/start.bat : See https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/f2a3d7e51df1caf77274bf776d2a9f66f1dbffd4/Extracted/start.bat | 2/6/2022 4:46:41 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | Call with @DesertBusDriver#9827 | 2/6/2022 4:46:50 AM - 2/6/2022 5:24:22 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | https://lazyadmin.nl/win-11/turn-off-windows-defender-windows-11-permanently/ | 2/6/2022 4:49:58 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | https://cdn.discordapp.com/attachments/939011014496776223/939745785627672627/unknown.png : See https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/f2a3d7e51df1caf77274bf776d2a9f66f1dbffd4/Extracted/unknown.png | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | bro your server never works it just kicked me out | 2/9/2022 3:54:32 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | are you really that dumb can you not set up a simple minecraft server | 2/9/2022 3:54:43 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | i just want to game dude | 2/9/2022 3:54:51 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | Sorry I needed to reboot my laptop to fix an issue | 2/9/2022 3:55:03 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | smh | 2/9/2022 3:55:10 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | hey man can you restart the minecraft server im haivng connection issues | 2/10/2022 12:40:03 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | thx! | 2/10/2022 12:52:00 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | No worries | 2/11/2022 1:14:09 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @PostMaster#9650 | STOP | 2/11/2022 1:18:46 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | goteem | 2/11/2022 1:18:51 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | peekaboo | 2/11/2022 1:22:21 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A|
+| @DesertBusDriver#9827 | did you turn off your internet | 2/11/2022 1:23:34 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | coward | 2/11/2022 1:23:35 AM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\80C6D157-4E08-4C34-8A6F-FA3F7D5EE229\Library\Caches\com.hammerandchisel.discord\fsCachedData\53AB62E6-1B8F-43A7-99DD-C32638F96C0A |
+| @DesertBusDriver#9827 | hey man i was just having some fun you should turn the minecraft server back on I wont do it again | 2/11/2022 2:42:49 AM | 2/11/2022 2:42:49 AM |
+  
 </details>
 
 </details>
