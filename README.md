@@ -189,6 +189,28 @@ See iPhone File Extensions File to view all extensions.
 ### Magnet & Autopsy Findings
 
 <details>
+<summary> Chess.com </summary>
+
+| User | Message | Timestamp | Found Location |
+| --- | --- | --- | --- |
+| com.chess.iphone install | Install Successful | 1/21/2022 4:21:34 PM (Local time) | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\installd\Library\Logs\MobileInstallation\mobile_installation.log.0 |
+| Login Info | ChessGod0107:God@Chess! | 1/21/2022 10:19:05 PM | PhysicalDrive0 - Partition 1 (Microsoft FAT32, 1.82 TB) NO NAME     [D:\]\Images\Jess_CTF_iPhone8\fb028ddefa8af7df5b12d3e729f075d150637a31_keychain.plist |
+| Login Info | pbentley0107@gmail.com, Much more, See Cache | 1/21/2022 10:19:05 PM | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\8A394840-7BE2-4814-A1EE-C3D35526444B\Library\Caches\com.chess.iphone\Cache.db |
+| Account Activation Link | https://www.chess.com/home/activate_account?user=ChessGod0107&key=is9h84u | 1/22/2022 1:19:58 AM | LenovoFinal.E01 - Partition 2 (EXT-family, 62.5 GB)\root\.msf4\loot\20220211201929_default_192.168.191.144_chromeHistory_592082.bin |
+| Chess.com User | ChessGod0107 | Null | LenovoFinal.E01 - Partition 2 (EXT-family, 62.5 GB)\root\.msf4\loot\20220211201929_default_192.168.191.144_chromeHistory_592082.bin |
+| Email | pbentley0107@gmail.com-alert@chess.com-One Minute Survey | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Email | alert@chess.com:Check Out The Top 5 Things To Do On Chess.com | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Email | alert@chess.com:Ready for Your First Puzzle? | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Email | hello@chess.com:Check Out These 3 Chess Tips To Improve Your Game! | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Email | alert@chess.com:Let's Play a Game of Chess! | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Email | alert@chess.com:Welcome to Chess.com | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Email | alert@chess.com:Activate Your Account | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\84B8DB80-7562-444A-9296-D4D23A12BCE9\Library\Application Support\data\pbentley0107@gmail.com\sqlitedb |
+| Link | https://api.chess.com/v1/messages/inbox?loginToken=978b71c2c99e05da1d1ce1e169870103&itemsPerPage=10&avatarSize=small&page=0&signed=iOS3.9.29-e20cf9304a82b89a18e2d1f21bbe750b8bd46939 | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\8A394840-7BE2-4814-A1EE-C3D35526444B\Library\Caches\com.chess.iphone\Cache.db-wal |
+| Link with Username | https://api.chess.com/v1/users/stats?loginToken=978b71c2c99e05da1d1ce1e169870103&username=ChessGod0107&signed=iOS3.9.29-f872519f516ba8dc2e3ddc75e03f65395214862b | Null | fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip\private\var\mobile\Containers\Data\Application\8A394840-7BE2-4814-A1EE-C3D35526444B\Library\Caches\com.chess.iphone\Cache.db-wal |
+  
+</details>
+  
+<details>
 <summary> Discord Generic</summary>
 
 | User | Message | Timestamp | Found Location |
