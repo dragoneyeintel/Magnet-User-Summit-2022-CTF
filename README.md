@@ -186,7 +186,7 @@
 A custom script was used to extract all of the files and sort them by type.
 See iPhone File Extensions File to view all extensions.
 
-### Magnet & Autopsy Findings
+### Important Magnet & Autopsy Findings
 <details>
 <summary> Snapchat Contacts </summary>
 
@@ -313,3 +313,6 @@ See iPhone File Extensions File to view all extensions.
 </details>
 
 </details>
+
+### Magnet Targeted Locations
+
