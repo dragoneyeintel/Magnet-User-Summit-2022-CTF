@@ -940,6 +940,22 @@ sudo john --wordlist='/home/noot/Documents/Tools/Scripts/Wordlists/Pass/rockyou.
 
 
 ### Autopsy
+EMails show usernames {spotify/google/microsoft-rafaelshell24@gmail.com, Mojang purchase info: Visa 453641******1815/Order ID: #303f33d7593846a5baea5c6e3e27aaa4/Transaction ID: braintree:j822gvrx, ChamplainGuest Creds: rafaelshell24@gmail.com/679670, twitter acc @RafaelShell2} 
+	
+<details>
+<summary>Downloads</summary>
+
+| Download | Link |
+| --- | --- |
+| /home/refael/Downloads/firefox.tmp/Minecraft.deb | https://launcher.mojang.com/download/Minecraft.deb |
+| home/rafael/Downloads/firefox.tmp/discord-0.0.16.deb (no longer exists) | https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.deb |
+| home/rafael/Downloads/intro-1636395579.jpg | https://www.looper.com/img/gallery/the-history-of-neo-from-the-matrix-explained/intro-1636395579.jpg |
+| home/rafael/Downloads/tightvnc-2.8.63-gpl-setup-64bit.msi | https://www.tightvnc.com/download/2.8.63/tightvnc-2.8.63-gpl-setup-64bit.msi |
+| home/rafael/Downloads/Rick Astley - Never Gonna Give You Up (Official Music Video).wav | https://mitchell61.oceansaver.in/pacific/?94c915e6689d85a99825e2287df |
+
+</details>
+
+
 <details>
   <summary>Email</summary>
 
@@ -7885,19 +7901,4 @@ Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73]
 
 </details>
 	
-</details>
-
-EMails show usernames {spotify/google/microsoft-rafaelshell24@gmail.com, Mojang purchase info: Visa 453641******1815/Order ID: #303f33d7593846a5baea5c6e3e27aaa4/Transaction ID: braintree:j822gvrx, ChamplainGuest Creds: rafaelshell24@gmail.com/679670, twitter acc @RafaelShell2} 
-	
-<details>
-<summary>Downloads></summary>
-
-| Download | Link |
-| --- | --- |
-| /home/refael/Downloads/firefox.tmp/Minecraft.deb | https://launcher.mojang.com/download/Minecraft.deb |
-| home/rafael/Downloads/firefox.tmp/discord-0.0.16.deb (no longer exists) | https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.deb |
-| home/rafael/Downloads/intro-1636395579.jpg | https://www.looper.com/img/gallery/the-history-of-neo-from-the-matrix-explained/intro-1636395579.jpg |
-| home/rafael/Downloads/tightvnc-2.8.63-gpl-setup-64bit.msi | https://www.tightvnc.com/download/2.8.63/tightvnc-2.8.63-gpl-setup-64bit.msi |
-| home/rafael/Downloads/Rick Astley - Never Gonna Give You Up (Official Music Video).wav | https://mitchell61.oceansaver.in/pacific/?94c915e6689d85a99825e2287df |
-
 </details>
