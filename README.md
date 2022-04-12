@@ -315,4 +315,221 @@ See iPhone File Extensions File to view all extensions.
 </details>
 
 ### Magnet Targeted Locations
+<details>
+<summary>Safari Browser Data</summary>
 
+| Location | Artifact | Timestamp |
+| --- | --- | --- |
+| private/var/mobile/Library/Safari/History.db | https://www.google.com/search?q=plant+shops+near+me&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari,https://www.google.com/search?q=plant+shops+near+me&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari&dlnr=1&sei=5d7iYf6jKZKtptQP_-GIwAE,https://www.google.com/search?q=plant+shops+near+me&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari&dlnr=1&sei=5d7iYf6jKZKtptQP_-GIwAE#dlnr=1&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:8816168392005291455,ru_gwp:0%252C7,ru_lqi:ChNwbGFudCBzaG9wcyBuZWFyIG1lIgOQAQFIzoSx_euAgIAIWicQABABGAAYAhgDIhNwbGFudCBzaG9wcyBuZWFyIG1lKgYIAxAAEAGSAQ1nYXJkZW5fY2VudGVymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5aYXpkeFgzRkJSUkFCqgETEAEqDyILcGxhbnQgc2hvcHMoAA,ru_phdesc:omCu5JhdcOw,trex_id:p1NnU,https://maps.google.com/maps/dir//472+Marshall+Ave,+Williston,+VT+05495/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cca78fdb4999e8b:0x7a59527145808dbf?entry=s&sa=X,https://www.google.com/maps/dir//472+Marshall+Ave,+Williston,+VT+05495/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4cca78fdb4999e8b:0x7a59527145808dbf?entry=s&sa=X,https://maps.app.goo.gl/?utm_campaign=ml_promo&pcampaignid=ml-dv2&apn=com.google.android.apps.maps&amv=965100030&link=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%2F472%2BMarshall%2BAve%2C%2BWilliston%2C%2BVT%2B05495%2F%4044.4443318%2C-73.1208343%2C15z%2Fdata%3D!4m7!4m6!1m1!4e2!1m2!1m1!1s0x4cca78fdb4999e8b%3A0x7a59527145808dbf!3e0%3Fentry%3Dml&isi=585027354&ibi=com.google.Maps&ius=comgooglemapsurl&pt=9008&mt=8&ct=ml-dv2-d5-en&efr=1,https://www.bedbathandbeyond.com/,https://www.google.com/search?q=when+does+bed+bath+and+beyond+close&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari,https://www.google.com/search?q=when+does+bed+bath+and+beyond+close&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari#sbfbu=1&pi=when%20does%20bed%20bath%20and%20beyond%20close,https://www.google.com/search?q=whatsmyip.com&client=safari&hl=en-us&ei=MiXkYc-ZMLOfptQPgvCg2Ak&oq=whatsmyip.com&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBwgAEIAEEAoyBggAEAoQHjIECAAQHjIGCAAQChAeMgQIABAeOgcIABBHELADOg0ILhDHARCjAhCwAxBDOgcIABCwAxBDOg4IABCPARDqAhCMAxDlAjoFCAAQkQI6DgguEIAEELEDEMcBENEDOgsILhCABBDHARCjAjoOCC4QgAQQsQMQxwEQowI6CwguEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoECAAQQzoLCC4QgAQQxwEQrwE6BwgAELEDEEM6CAgAEIAEELEDOgoIABCxAxCDARBDOgcILhCABBAKOggIABCxAxCDAToLCAAQgAQQsQMQgwE6BAgAEAM6CAgAEIAEEMkDOgUIABCSAzoLCAAQgAQQsQMQyQM6BwgAELEDEAo6CggAELEDEIMBEApKBAhBGABQ7A9YuEdg4lBoCnABeACAAasBiAGlDJIBBDE0LjOYAQCgAQGwAQ_IAQvAAQE&sclient=mobile-gws-wiz-serp,https://www.google.com/search?q=youtube&client=safari&hl=en-us&ei=rxrrYZKbA4TL_QaIpJ6gDg&oq=youtube&gs_lcp=ChNtb2JpbGUtZ3dzLXdpei1zZXJwEAMyEAguELEDEIMBEMcBENEDEEMyCAgAELEDEJECMgUIABCRAjIICAAQgAQQsQMyBQgAEIAEMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDOggIABCABBCwAzoICAAQsAMQkQI6CQgAELADEAcQHjoJCAAQsAMQChAeOgcIABCwAxAeOgkIABCwAxAIEB46AggpOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6CAguEIAEELEDOgcIABAKEJECOgcILhCxAxBDOgUILhCABDoNCAAQsQMQgwEQsQMQQzoHCAAQsQMQCjoECAAQCkoECEEYAVCpDFiDL2DQgwFoBnAAeAGAAeQGiAGZG5IBCzAuOC40LTIuMS4xmAEAoAEBsAEByAEPwAEB&sclient=mobile-gws-wiz-serp,https://m.youtube.com/,http://ttlw.co/hZWOrxQ,https://www.totalwireless.com/collectminpinpromo?utm_source=ret&utm_medium=sms&utm_campaign=19160_ret&utm_content=WRR_19160A_0L1C1S1_03_SP&utm_term=437836267006721187 | Null |
+| private/var/mobile/Library/Safari/History.db | plant shops near me - Google Search | 663950949.793299 |
+| private/var/mobile/Library/Safari/History.db | plant shops near me - Google Search | 663950950.836784 |
+| private/var/mobile/Library/Safari/History.db | plant shops near me - Google Search | 663950955.229692 |
+| private/var/mobile/Library/Safari/History.db | plant shops near me - Google Search | 663950955.895498 |
+| private/var/mobile/Library/Safari/History.db | plant shops near me - Google Search | 663951001.67838 |
+| private/var/mobile/Library/Safari/History.db |  | 663951006.623059 |
+| private/var/mobile/Library/Safari/History.db | Your location to Gardener's Supply Company, 472 Marshall Ave, Williston, VT 05495 - Google Maps | 663951006.623559 |
+| private/var/mobile/Library/Safari/History.db |  | 663951012.186291 |
+| private/var/mobile/Library/Safari/History.db |  | 663951012.594043 |
+| private/var/mobile/Library/Safari/History.db | Bedding, Bath Towels, Cookware, Fine China, Wedding & GiftRegistry | Bed Bath & Beyond | 664034322.608402 |
+| private/var/mobile/Library/Safari/History.db | Bed Bath & Beyond: Bedding, Bathroom Sets, Cookware, Home Decor, Wedding & Gift Registry | 664034323.131584 |
+| private/var/mobile/Library/Safari/History.db | when does bed bath and beyond close - Google Search | 664034482.908804 |
+| private/var/mobile/Library/Safari/History.db | when does bed bath and beyond close - Google Search | 664034483.812773 |
+| private/var/mobile/Library/Safari/History.db | when does bed bath and beyond close - Google Search | 664490532.932717 |
+| private/var/mobile/Library/Safari/History.db | when does bed bath and beyond close - Google Search | 664490542.971937 |
+| private/var/mobile/Library/Safari/History.db | whatsmyip.com - Google Search | 664490543.181265 |
+| private/var/mobile/Library/Safari/History.db | whatsmyip.com - Google Search | 664490543.858794 |
+| private/var/mobile/Library/Safari/History.db | youtube - Google Search | 665628721.470431 |
+| private/var/mobile/Library/Safari/History.db | youtube - Google Search | 665628774.15167 |
+| private/var/mobile/Library/Safari/History.db | YouTube | 665628788.122193 |
+| private/var/mobile/Library/Safari/History.db | Home - YouTube | 665628874.168026 |
+| private/var/mobile/Library/Safari/History.db |  | 665815863.667424 |
+| private/var/mobile/Library/Safari/History.db | Stress Less & Save More With 30 Day Plans | Total Wireless | 665815863.667769 |
+| private/var/mobile/Library/Safari/CloudTabs.db | (device_uuid:D941817D-FC8E-4ADE-A0B6-9CB92D1EB948)(device_name iPhone 8) | 666162000 |
+| private/var/mobile/Library/Safari/CloudTabs.db | (tab_uuid:75B3ECB7-70D4-4AAA-A49B-A85279D03233)(device_uuid:D941817D-FC8E-4ADE-A0B6-9CB92D1EB948)(Title:Bed Bath & Beyond: Bedding, Bathroom Sets, Cookware, Home Decor, Wedding & Gift Registry)(url:https://www.bedbathandbeyond.com/)(scene_id:E17BBAF8-4102-4828-BC33-442B1EAF89D1) | Null |
+| private/var/mobile/Library/Safari/CloudTabs.db | (tab_uuid:7383072C-81DD-4477-B5E5-068C70B6DCFC)(device_uuid:D941817D-FC8E-4ADE-A0B6-9CB92D1EB948)(title:My Computer Was Hacked! 3 Things To Do Immediately - The Missing Report)(url:https://preyproject.com/blog/en/my-computer-was-hacked-3-things-you-should-do/)(scene_id:E17BBAF8-4102-4828-BC33-442B1EAF89D1) | Null |
+
+</details>
+
+<details>
+<summary>GeoLocation</summary>
+  
+| Location | Artifact | Timestamp |
+| --- | --- | --- |
+| /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Library/Caches/com.apple.routined/Cache.sqlite | SeeFile | Null |
+
+</details>
+
+
+<details>
+<summary>Media</summary>
+  
+| Location | Artifact | Timestamp |
+| --- | --- | --- |
+| /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Media/DCIM/100APPLE/ | Photos - See https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/01c5cec6082920fb9c48cb050a869d83aab3ca35/Extracted/100APPLEp1.zip, https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/01c5cec6082920fb9c48cb050a869d83aab3ca35/Extracted/100APPLEp2.zip | Null |
+| /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Media/PhotoData/Photos.sqlite | See File | Null |
+
+</details>
+
+<details>
+<summary>Installed Applications</summary>
+
+| id	| application_identifier |
+| -- | -- |
+| 1	| com.apple.BarcodeScanner |
+| 2	| com.apple.WebSheet |
+| 4	| com.apple.BluetoothUIService |
+| 5	| com.apple.purplebuddy |
+| 6	| com.apple.findmy |
+| 8	| com.apple.Preferences |
+| 9	| com.apple.mobileslideshow |
+| 10	| com.apple.ScreenSharingViewService |
+| 11	| com.apple.Photos.PhotosUIService |
+| 12	| com.apple.Home.HomeControlService |
+| 13	| com.apple.webapp |
+| 14	| com.apple.musicrecognition |
+| 16	| com.apple.MBHelperApp |
+| 18	| com.apple.ClipViewService |
+| 19	| com.apple.FTMInternal |
+| 21	| com.apple.ScreenTimeUnlock |
+| 22	| com.apple.mobilesafari |
+| 23	| com.apple.AppSettings |
+| 24	| com.apple.BusinessChatViewService |
+| 25	| com.apple.shortcuts.runtime |
+| 26	| com.apple.PeopleViewService |
+| 27	| com.apple.Diagnostics |
+| 28	| com.apple.CarPlaySettings |
+| 29	| com.apple.HealthENLauncher |
+| 30	| com.apple.HealthENBuddy |
+| 31	| com.apple.AppStore |
+| 32	| com.apple.FunCamera.TextPicker |
+| 34	| com.apple.mobiletimer |
+| 35	| com.apple.Health |
+| 36	| com.apple.GameCenterRemoteAlert |
+| 37	| com.apple.mobilephone |
+| 38	| com.apple.gamecenter.widgets |
+| 39	| com.apple.FunCamera.ShapesPicker |
+| 40	| com.apple.camera |
+| 42	| com.apple.ActivityMessagesApp |
+| 43	| com.apple.FunCamera.EmojiStickers |
+| 44	| com.apple.social.SLYahooAuth |
+| 45	| com.apple.appleseed.FeedbackAssistant |
+| 46	| com.apple.icq |
+| 47	| com.apple.siri.parsec.HashtagImagesApp |
+| 48	| com.apple.dt.XcodePreviews |
+| 49	| com.apple.MobileSMS |
+| 50	| com.apple.Passbook |
+| 51	| com.apple.smsFilter |
+| 52	| com.apple.Home.HomeUIService |
+| 53	| com.apple.Animoji.StickersApp |
+| 54	| com.apple.sidecar |
+| 55	| com.apple.fieldtest |
+| 56	| com.apple.AskPermissionUI |
+| 57	| com.apple.SleepLockScreen |
+| 58	| com.apple.AAUIViewService |
+| 59	| com.apple.DemoApp |
+| 60	| com.apple.family |
+| 61	| com.apple.SharingViewService |
+| 62	| com.apple.ctkui |
+| 63	| com.apple.ScreenshotServicesService |
+| 64	| com.apple.RemoteiCloudQuotaUI |
+| 65	| com.apple.HealthPrivacyService |
+| 66	| com.apple.AccountAuthenticationDialog |
+| 67	| com.apple.TrustMe |
+| 68	| com.apple.VSViewService |
+| 69	| com.apple.PassbookUIService |
+| 70	| com.apple.HDSViewService |
+| 71	| com.apple.SafariViewService |
+| 72	| com.apple.CarPlayWallpaper |
+| 73	| com.apple.CarPlaySplashScreen |
+| 74	| com.apple.CTNotifyUIService |
+| 75	| com.apple.Spotlight |
+| 76	| com.apple.InCallService |
+| 77	| com.apple.AuthKitUIService |
+| 78	| com.apple.icloud.FindMyDevice.FindMyExtensionContainer |
+| 79	| com.apple.mobilesms.compose |
+| 80	| com.apple.CloudKit.ShareBear |
+| 81	| com.apple.MailCompositionService |
+| 82	| com.apple.CredentialSharingService |
+| 83	| com.apple.DataActivation |
+| 84	| com.apple.Health.Sleep |
+| 85	| com.apple.MTLReplayer |
+| 86	| com.apple.FMDMagSafeSetupRemoteUI |
+| 87	| com.apple.gamecenter.GameCenterUIService |
+| 88	| com.apple.CompassCalibrationViewService |
+| 89	| com.apple.CompanionAuthViewService |
+| 90	| com.apple.ios.StoreKitUIService |
+| 91	| com.apple.SharedWebCredentialViewService |
+| 92	| com.apple.CheckerBoard |
+| 93	| com.apple.CTCarrierSpaceAuth |
+| 94	| com.apple.TVAccessViewService |
+| 95	| com.apple.PassbookSecureUIService |
+| 96	| com.apple.PublicHealthRemoteUI |
+| 97	| com.apple.SIMSetupUIService |
+| 98	| com.apple.MusicUIService |
+| 99	| com.apple.susuiservice |
+| 100	| com.apple.PrintKit.Print-Center |
+| 101	| com.apple.PreBoard |
+| 102	| com.apple.AuthenticationServicesUI |
+| 103	| com.apple.ScreenTimeWidgetApplication |
+| 104	| com.apple.DiagnosticsService |
+| 105	| com.apple.FontInstallViewService |
+| 106	| com.apple.AppSSOUIService |
+| 107	| com.apple.SubcredentialUIService |
+| 108	| com.apple.CoreAuthUI |
+| 109	| com.apple.iMessageAppsViewService |
+| 110	| com.apple.WebContentFilter.remoteUI.WebContentAnalysisUI |
+| 111	| com.apple.PaperBoard |
+| 112	| com.apple.AXUIViewService |
+| 113	| com.apple.FaceTimeLinkTrampoline |
+| 114	| com.apple.PassbookBanner |
+| 115	| com.apple.Magnifier |
+| 116	| com.apple.shortcuts |
+| 117	| com.apple.MobileAddressBook |
+| 118	| com.apple.calculator |
+| 119	| com.apple.mobilemail |
+| 120	| com.apple.news |
+| 121	| com.apple.facetime |
+| 122	| com.apple.mobilenotes |
+| 123	| com.apple.reminders |
+| 124	| com.apple.Home |
+| 125	| com.apple.tips |
+| 126	| com.apple.Maps |
+| 127	| com.apple.MobileStore |
+| 128	| com.apple.mobilecal |
+| 129	| com.apple.VoiceMemos |
+| 130	| com.apple.DocumentsApp |
+| 131	| com.apple.tv |
+| 132	| com.apple.weather |
+| 133	| com.apple.Translate |
+| 134	| com.apple.measure |
+| 135	| com.apple.iBooks |
+| 136	| com.apple.stocks |
+| 137	| com.apple.Music |
+| 138	| com.apple.compass |
+| 139	| com.apple.podcasts |
+| 140	| com.apple.Bridge |
+| 141	| com.google.Gmail |
+| 142	| com.hammerandchisel.discord |
+| 143	| com.toyopagroup.picaboo |
+| 144	| com.moxco.bumble |
+| 145	| com.atebits.Tweetie2 |
+| 146	| com.reddit.Reddit |
+| 147	| org.whispersystems.signal |
+| 148	| com.wearezeta.zclient.ios |
+| 150	| com.alltrails.AllTrails |
+| 151	| ru.appscraft.CollectorGame |
+| 152	| com.gma.water.sort.puzzle |
+| 153	| com.chess.iphone |
+
+</details>
+
+KnowledgeC
+private/var/mobile/Library/CoreDuet/Knowledge/ < See File
+
+
+Application Time
+private/var/mobile/Library/Application Support/com.apple.remotemanagementd/ < See File
+
+
+SMS Data, Timestamps, IDs, and more
+/home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Library/SMS/ < See File; no contacts, no phone calls
