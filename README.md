@@ -933,3 +933,6956 @@ xrdp:x:128:136::/run/xrdp:/usr/sbin/nologin
 | `xrdp:!:19035:0:99999:7:::` | NULL |
   
 </details>
+
+unshadow passwd shadow.txt > unshadowed.txt
+
+sudo john --wordlist='/home/noot/Documents/Tools/Scripts/Wordlists/Pass/rockyou.txt' unshadowed.txt 
+
+
+### Autopsy
+<details>
+  <summary>Email</summary>
+
+<details>
+  <summary>INBOX - noreply@bumble.com</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - rafaelshell24@gmail.com</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - no-reply@accounts.google.com</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - account-security-noreply@accountprotection.microsoft.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - noreply@mojang.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - hello@getslopes.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - google-noreply@google.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - noreply@champlain.edu	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - googlecommunityteam-noreply@google.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - googlepixel-noreply@google.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - info@twitter.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>INBOX - googleassistant-noreply@google.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+  
+</details>
+<details>
+  <summary>Important - no-reply@spotify.com	</summary>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Thu Feb  3 21:51:00 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>Important - noreply@champlain.edu	</summary>
+From - Wed Feb  9 17:08:47 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp278912lqf;
+        Tue, 1 Feb 2022 16:26:24 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJyYOdP8mj8ORu4Wybib6fR5yxQGBdKGGIToaPRJuZCqpppaswkYTmTlbX0xVhHNZyO7x8ee
+X-Received: by 2002:ac8:5a93:: with SMTP id c19mr21563072qtc.58.1643761584084;
+        Tue, 01 Feb 2022 16:26:24 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643761584; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=BkdBmE7cIPsT3T86NVktUiiPtY6JgXLEp1+M30WsVno6fwzARIVwpAfDXRmsqnbbDx
+ ††††
+0fyFhs/DQa8dVSaZ+6sF6GppQLVSs4H/ThbyMnZvDdxlV5KYo+nRDfxEW0Utz7xLIbrX
+         ae92z/9p+NpdjNnWbt6y2Btse5gOD3ZnpNgrNoB3zBOUOOQWzYAnTl5H9H07pH1yUKtQ
+ ††††
+7YYPkMo7o0tqmI+ROuR2BVn26ntkXszFBlGRspEIXOMRS8SxDUnuHmz+bY084EQU92Qd
+         3MQJ0wxQilyUqmbT6/jJMS/NxDnnA/Sfek+dSBskUNLuCAXCxckfZb/J/iMBwGwiWDB5
+ ††††
+zm/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:to:from:date;
+ †††
+ bh=v5DYbisOrqeDvqUhO2YwnMY7xMc85CLrIqgkYlnNcx8=;
+ †††
+ b=JG8Sq0TEnPMRFBSvRH+Xt70RlLi/fGTDPhJuJv43TrJ/S+X+r6sfYPahowyfb5uGMC
+ ††††
+TBNPt2i6IFgz4DZIduzKby/uVQYan8tREEsPkbUooN5UO3pTq10GBxJA9JXwlNtYOjRM
+         vK5g2L7e5UtMwy6z0N5pH1Rn6fOEaKywGOgTMEvJgKG+qoux7EXjv4LVIjwcXeekkyQm
+ ††††
+KU0iIJe8KVTkG7OIZfJhsvPdXXOx/ac/1aC9QejZE5z8jV20MbmC30Z4hFzL2PO0AR36
+         qsbUid3pefV+jouUv8tk0bff3LNrE36xXWEOFmz063v5NqEQABe7WycnaIA8EmcZA5FJ
+ ††††
+Xksw==
+ARC-Authentication-Results: i=1; mx.google.com;
+ †††
+spf=pass (google.com: domain of noreply@champlain.edu designates 216.93.144.74 as permitted sender) smtp.mailfrom=noreply@champlain.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=champlain.edu
+Return-Path: <noreply@champlain.edu>
+Received: from smtp1.champlain.edu (74-144.champlain.edu. [216.93.144.74])
+ †††
+ by mx.google.com with ESMTP id 2si13663943qtf.740.2022.02.01.16.26.23
+        for <rafaelshell24@gmail.com>;
+        Tue, 01 Feb 2022 16:26:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@champlain.edu designates 216.93.144.74 as permitted sender) client-ip=216.93.144.74;
+Authentication-Results: mx.google.com;
+ †††
+spf=pass (google.com: domain of noreply@champlain.edu designates 216.93.144.74 as permitted sender) smtp.mailfrom=noreply@champlain.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=champlain.edu
+Date: Tue, 01 Feb 2022 16:26:24 -0800 (PST)
+Received: from cp-lakeside.localdomain (135-150.champlain.edu [216.93.150.135])
+	by smtp1.champlain.edu (Postfix) with ESMTP id 609E5406AFD1
+	for <rafaelshell24@gmail.com>; Tue,  1 Feb 2022 19:26:23 -0500 (EST)
+From: noreply@champlain.edu
+To: rafaelshell24@gmail.com
+Message-ID: <1101466864.7956.1643761583398.JavaMail.avendatomcat@cp-lakeside>
+Subject: Visitor account receipt for rafaelshell24@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7955_1331751788.1643761583381"
+------=_Part_7955_1331751788.1643761583381
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_bf49b829b3c5a084395d4efd10c37ba8"
+Content-Transfer-Encoding: quoted-printable
+--=_bf49b829b3c5a084395d4efd10c37ba8
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+Visitor account receipt for rafaelshell24@gmail.com
+		  Welcome Rafael Shell, your account has been created and is now ready to use.
+		   
+	Wi-Fi Network: ChamplainGuest
+	Guest Account and Wi-Fi Instructions:
+			Make sure your wireless adapter is set to dynamically obtain an IP address
+			Connect to the wireless network: ChamplainGuest
+						Enter credentials:
+	– Username: rafaelshell24@gmail.com
+	– Password: 679670
+						Account expires: Friday, February  4, 2022 19:26    
+								 
+								 
+										© Copyright 2022
+								 
+								 
+--=_bf49b829b3c5a084395d4efd10c37ba8
+Content-Type: multipart/related;
+ boundary="=_e7a8787e7f03e0f8276720b6fb2b61a5"
+--=_e7a8787e7f03e0f8276720b6fb2b61a5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+=2Ew3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+<title>Visitor account receipt for rafaelshell24@gmail.com</title>
+</head>
+<body>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"99%" bgcol=
+or=3D"#f1f1f1">
+  <tr>
+    <td bgcolor=3D"#f1f1f1">
+      <br />
+      <!-- Start email table -->
+      <style type=3D"text/css" media=3D"screen">
+      body {
+        margin: 0;
+        padding: 0;
+ †††
+ color: #222222;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f1f1f1;
+        background-color: #f1f1f1;
+        text-align: left;
+      }
+      a,a:link,a:active,a:hover,a:visited {
+ †††
+ color: #0087ce;
+        text-decoration: none;
+        margin:0;
+ †††
+ padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1,h2,h3,h4 {
+        font-family:Arial, Helvetica, sans-serif;
+ †††
+ margin: 0;
+ †††
+ padding: 0; =20
+        color: #222222;
+      }
+      p {
+ †††
+ margin: 0;
+ †††
+ padding: 0;=20
+ †††
+ line-height: 20px;
+ †††
+ font-size: 14px;
+ †††
+ color: #222222;
+      }
+      img {
+        border: none;
+ †††
+ margin: 0;
+ †††
+ padding: 0;=20
+      }
+      </style>
+      <table width=3D"618" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" align=3D"center" style=3D"border:1px solid #dddddd;">
+        <tr>
+          <td height=3D"20" colspan=3D"3"><img src=3D"cid:164376158361f9cfa=
+f2ab1c084327124" height=3D"20" width=3D"1" /></td>
+        </tr>
+ †††
+ <tr>
+ ††††
+ <td width=3D"20"><img src=3D"cid:164376158361f9cfaf2ab1c084327124=
+" height=3D"1" width=3D"20" /></td>
+          <td valign=3D"top" align=3D"left">
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0">
+              <tr>
+                <td align=3D"center">
+ †††††††††††††††††††††
+ <img src=3D"cid:164376158361f9c=
+faf2ab49226995136" style=3D"width: 25%;" width=3D"25%">
+                                    </td>               =20
+ ††††††
+ </tr>
+              <tr>
+                <td height=3D"42" valign=3D"middle">
+                  <img src=3D"cid:164376158361f9cfaf2ab57248634902" width=
+=3D"578" height=3D"2" />
+                </td>
+ ††††††
+ </tr>
+            </table>
+            <!-- End head -->
+<div>
+								=09
+ =20
+  <style>
+  .list-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  .list-counter > li {
+    counter-increment: step-counter;
+  .list-counter > li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.8em;
+  </style>
+ =20
+	<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgc=
+olor=3D"#FFFFFF">
+	  <tr>
+		<td colspan=3D"3" height=3D"30">&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td width=3D"30">&nbsp;</td>
+		<td>
+		  <p style=3D"font-family:Arial, Helvetica, sans-serif;font-weight:bold;f=
+ont-size:27px;color:#222222;line-height:36px;padding:0;margin:0;">Welcome <=
+span style=3D"color:#FF8300;">Rafael Shell</span>, your account has been cr=
+eated and is now ready to use.</p>
+		</td>
+		<td width=3D"30">&nbsp;</td>
+	  </tr>
+	  <tr>
+		  <td colspan=3D"3" height=3D"30">&nbsp;</td>
+	  </tr>
+	</table>
+	<!-- Set custom width below for larger content -->
+	<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+	  <tr>
+		<td height=3D"25">&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td valign=3D"top">
+		  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+align=3D"center">
+			<tr>
+			  <td valign=3D"top" width=3D"30"><img src=3D"cid:164376158361f9cfaf2ab7=
+7035627074" style=3D"width: 30px;" /></td>
+			  <td valign=3D"top">
+				<h3 style=3D"font-family:Arial, Helvetica, sans-serif;font-size:20px;li=
+ne-height:25px;font-weight:bold;color:#222222;margin:0;padding:0;">
+	Wi-Fi Network: <span style=3D"color:#FF8300;">ChamplainGuest</span>
+				</h3>
+			  </td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>	  <tr>
+		<td height=3D"22" valign=3D"top">
+		  <img src=3D"cid:164376158361f9cfaf2ab57248634902" width=3D"578" height=
+=3D"2" />
+		</td>
+	  </tr>
+	  <tr>
+		<td valign=3D"top">
+		  <h3 style=3D"font-family:Arial, Helvetica, sans-serif;font-size:20px;li=
+ne-height:20px;font-weight:bold;color:#222222;margin:0 0 10px 0;padding:0;"=
+	Guest Account and Wi-Fi Instructions:
+		  </h3>
+		  <ol class=3D"list-counter">
+			<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px 0;=
+padding:0;color:#222222;font-size:14px;">Make sure your wireless adapter is=
+ set to dynamically obtain an IP address</li>
+			<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px 0;=
+padding:0;color:#222222;font-size:14px;">Connect to the wireless network: <=
+span style=3D"color:#222222;"><strong><em>ChamplainGuest</em></strong></spa=
+n></li>
+						<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px=
+ 0;padding:0;color:#222222;font-size:14px;">Enter credentials:
+			  <ul style=3D"list-style-type:none;list-style-position:inside;margin:0;=
+padding:3px 0 0 20px;">
+				<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 3px 0;=
+padding:0;color:#222222;font-size:14px;">
+	&ndash; <em>Username: <span style=3D"color:#222222;"><strong>rafaelshell24=
+@gmail.com</strong></span></em>
+				</li>
+				<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 3px 0;=
+padding:0;color:#222222;font-size:14px;">
+	&ndash; <em>Password: <span style=3D"color:#222222;"><strong><em>679670</e=
+m></strong></span></em>
+				</li>
+			  </ul></li>
+						<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px=
+ 0;padding:0;color:#222222;font-size:14px;">Account expires: Friday, Februa=
+ry  4, 2022 19:26</li>    </ol>
+		</td>
+	  </tr>
+	</table>
+</div>
+												<!-- Start body_end --> =20
+						<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" bgcolor=3D"#ffffff">
+							<tr>
+								<td colspan=3D"3" height=3D"20" bgcolor=3D"#ffffff"><br /></td>
+							</tr>
+							<tr>
+								<td colspan=3D"3" height=3D"20">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width=3D"20">&nbsp;</td>
+								<td align=3D"center">
+									<p style=3D"font-family:Arial, Helvetica, sans-serif;padding:0;col=
+or:#666666;font-size:10px;">
+										&copy; Copyright 2022
+									</p>
+								</td>
+								<td width=3D"20">&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan=3D"3" height=3D"20">&nbsp;</td>
+							</tr>
+						</table>
+											</td>
+					<td width=3D"20"><img src=3D"cid:164376158361f9cfaf2ab1c084327124" hei=
+ght=3D"1" width=3D"20" /></td>
+				</tr>
+				<tr>
+					<td height=3D"20" colspan=3D"3"><img src=3D"cid:164376158361f9cfaf2ab1=
+c084327124" height=3D"20" width=3D"1" /></td>
+				</tr>
+			</table>
+			<!-- Start email table -->
+			<br />
+		</td>
+	</tr>
+</table>
+<div style=3D"position:absolute;left:-4px;"><img src=3D"cid:164376158361f9c=
+faf2ab1c084327124" width=3D"1" height=3D"1"><img src=3D"cid:164376158361f9c=
+faf2ab49226995136" width=3D"1" height=3D"1"><img src=3D"cid:164376158361f9c=
+faf2ab57248634902" width=3D"1" height=3D"1"><img src=3D"cid:164376158361f9c=
+faf2ab77035627074" width=3D"1" height=3D"1"></div></body>
+</html>
+--=_e7a8787e7f03e0f8276720b6fb2b61a5
+Content-Transfer-Encoding: base64
+Content-ID: <164376158361f9cfaf2ab1c084327124>
+Content-Type: image/gif;
+ name=1x1.gif
+Content-Disposition: inline;
+ filename=1x1.gif;
+ size=51
+R0lGODlhAQABAJEAAP///wAAAAAAAAAAACH5BAkAAAAALAAAAAABAAEAAAgEAAEEBAA7
+--=_e7a8787e7f03e0f8276720b6fb2b61a5
+Content-Transfer-Encoding: base64
+Content-ID: <164376158361f9cfaf2ab49226995136>
+Content-Type: image/png;
+ name=champlain_college_logo.png
+Content-Disposition: inline;
+ filename=champlain_college_logo.png;
+ size=42779
+iVBORw0KGgoAAAANSUhEUgAAAtAAAACoCAYAAADJudkZAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAA
+CXBIWXMAABwgAAAcIAHND5ueAAAAB3RJTUUH4QQOExAv++CBVQAAgABJREFUeNrsnXd8JVd5sJ+Z
+29W7VlpJ27W9eF3Wbd1tbOOGKbYBUwQJzSG0JEDIRwgJJSQkBNEMGAOmYxuDjXtva6+3e5u2adV7
+v9KtM98f79zVqM+V7tWVduf5/a6tlebOnHPmlPe85y0Kc4zbv/QAgIpCUSiiubqHAmnBaMTZG444
+g5GoqqODFlUc6KiKoizIzLxEVZTzABXQI1GtZCgSWaKDc+zddQAUFD0QjWZEdd3lczj6FEXR5G/K
+RMVSfE7nPrdD7dLlIlXT9f3dQ0NPDYZCfhRViSoOXVHA43DoWS5nxKGqutfpDBWk+QazPJ7+u790
+fd/TD9dy1Y1LUt3ENjY2NjY2NjY2M0CZ+S3i56Nf+ytAZvdgoLR7KJDfGwxm9IfDnkAkqjp0TXGp
+ijfP53u7DrmhaHRxVNPThqLRjIimu3V0dE1TVUMY1nTU4XroaJqu6PrYZ+qAoqjj1V03X6Xr+kSN
+ojscirnJdEVBV0DXUdAVVVcURXeqSsTrcPhVhYhDUbs8TkddVNNq+oKBbYGIHsDhwKWqWpbbFc52
+e/qyvZ6+HJ+n1ed2dXz3n96iY2NjY2NjY2NjM6dJqgD99998HJdD9Zzs7l3X7h9a4w+HM7uCoXS0
+KBkuZ4XH4dgY1fVFYU3LD0U1X0TTVNBRdB1NBxGWdZPwq+BUFbLcLpyqiqLAgtxMnE4VdHA5VZaX
+55Gd6UUfI0UrKKo6aXl1XQddZ4RMbfrbviNtDAUjKAqEIxqd/YMEwxHQYTASwR+OGtdqgAjiqqqg
+KAqK8RtFVVEVRfM41KBLVdsditoa1bXD/cHQgYiiamkuZzDD6QwUpqXVprlddQoc/O2/32oL1jY2
+NjY2NjY2c4SECtA3/dPv0HWu7gkGL+4LhfIHQmGfEz3d53RUarAsqulpIU1zGjrbUWKqitfpINfr
+JtPrpiQ/i7wsH+uXF5Huc4GioKPgVBTSXU6cqmiDC7LTcDpEMHY6VEoKM0jzuhLeULquU9vUSygU
+BQUiUY1ef4BQJAo6BKJRhiLDArSiQHdfgO37m/APhmjrHSAYidI6GCCqaeiadqr1h1XhCg5Vxakq
+EaeiNOrQNBiO1EQVVct2u/pzPZ62dI/7SIbb9Zyi0Pbrf7s14fW0sbGxsbGxsbGZHMsC9Ge+9RRF
+GWnsbW5zNfT2uVoHh5RMp8OTn+b7QG8wtKU3GCoKRyNOj6qU61AS1XW3ZphDOFQRDB0OFYfDQa7H
+TWlWBgsLsli5uJC1ywtQVRWHouBxOHA7VdK8brxuJzkZHhQ1JZYmMyYcidLVGyAciTIUDBPVdYYi
+UWLtUtfcy94jrdS39tLa66djKMBgJAK6RjgSRdN0NEMb71AV3amoQRR6IprWFEYZzHS5+nI8nqZ0
+t+vlloGBPw1F9XChz6uXZGREctO84VAkqt/z5RtT3Qw2NjY2NjY2NqcVk0qmVV/5C4qieOp6+3Ia
+Bvxer6pk5no9N/tD4et6gqEFUS3icaDkarqepum64lAUPC4n6V4XPq+LNLebkow0li3IZe3SYjat
+KsblFEHZqTpwOVU8Licul2qpsLquE4mE0YFwJIymaQBEdY1INHrqOk3XCGtR9AQZPjhVFac6bGqt
+AE6HE9XQgjtVBw6HA0VRcDqcKIo1gT8a1QmGIoQjUcKaRjQmMGs6T247zommbo639dA+NEQ4GiUQ
+DDMUCDMUihDWxNTEoSpRRVH8mq73OhyuYLbb1ZLhdr3WFwz+qicU6S5M80UWZWf3L83PGQhEItH/
+/txView/NjY2NjY2NjZnHCMkvZ/9cg8fvHMjn/zG42l7W9pXNvv96Tke19no3NYbCq8KRyNeVddc
+UU13aDpKmstJbrqXksIs0n1uCnxelhbmsHlVKRtWFKGqCqqijPj/ZEQiEYLhIIOBQULhMIFwiEg0
+wmAkTCgaoc/fR0NbI5FIhLbuDgYCgwAMBPx09PcCuphTRMI0+nvRdG3GDaQDuZ40CnzpqIqKruu4
+nE4KMnPxuj0oQF5mDjlZ2TgdThYWlpKdkYVTUfE53TgdDnwuDw6HgzSvD5fDic+bNuVzo1ENTQdN
+10/Zc9fUdrHvWCsH6tppHwwwFAnT1TNIe7efvkCIYDSKqqCrIlSHFdURyXC52tJdzpf6w+G/hjS9
+qdDnGyrLyqxzKEr7L75yc2p6nY2NjY2NjY3NPEYBePe/PIiqKPmtfv/Z9X0D5T6HslJRlHf6w5Gy
+aDTq1HWNSBS8TgelORmsXlxIYV4GhWleli3I5fx1ZeRkeS0/dCgwRGdvJ/2DfnoH+xkMBekNDdHR
+201HTwdtPR30D/rp8fcxFArSPjTAQDiAYpb3TVreVBh46KP/NUrbneZ0UeDLxOf2kJeRhdftoTAn
+n3RfOhXF5aS7PWS6PGSnZeB1e8jPyiM9LR2fxxdXOQ6d6GTf0Rbqu/vpC4Vo7xrgSF0XbX1++kJh
+dF0TG3FFweVwhH1OZ4uqKE/3BMOvZHs9g+WZGXtWFOYd6hwcitzzL7a5h42NjY2NjY3NVCjX/+Nv
+t9b19l+ja9EVLod64VA4slDTNVXTdBQUCtK9rCkv5Ny1ZeSme1iYm8maJYXkZVsT9Lr7e6htOkln
+fw9tvV20DfXT2ddDc2cLfYMD9Pj78AcDdAcHieryTEVRQEF+BlCU1MTbmyG6Lo6SuiFgx/6v6RoZ
+Lg9Zbi/Z6Zn43F4Kc/LIzsimODufPE8aBVk55GfmUFZYSmFeIQ7VYemZXT1DHKnroqV3gL5QmPbu
+AV7eU8fJjl56AiGQ+NmgKLidjqBLUXYORrUd2R5PS2lG+lOKorz2p2+8K9VNZ2NjY2NjY2MzZ1HW
+/c0PDkd0fUVU0xSHoqA6HJRkpHPFpsVcvKmCNJeTBbkZlBRkInGQR6IbJgY6OoFQkLqWBg7VHaGx
+s5WWgV7qe9rp7OtiMDBEf2CQgVCAqG6Ed2M4xJtVu+HTBT3WdjHhWtfRdA2n6iDd6Sbd6yPd4yM7
+I4vcjGxKM3Iozy2kMCef5WVLWFKySLYXipjHTNR+gWCE+tY+uv1DDATDvLqngW2H6qnvGSAYiaBr
+GhoKLoeKw+G8G5SP7Pvhh1PdPDY2NjY2NjY2cxZnMBqtVBWFxfk53HjOCi4/dwk5GR5y0r1kpLnH
+fEHXdSLRiNgoR0IcrT/G4fpj1DTVcrSzhQ5/L4OBIYLhEMFohIimiZCsKCgKOBxOrOlSE8d0fQmT
+KdIPbxoU04OkZQa1MH5/GPy9aJ3NKDq4HQ48Ljdupwufx0thRg5Lc4soySlg9aIVbFi+DrfTicvh
+wu104nBIIkavx8mKirxTzz2vspQPDm4kFNU4XNvBY9uO8vzhegaCIUJ6NM8OOG1jY2NjY2NjMzlO
+XdNZmJ/F5995EZedvWhcRz9N0xgYGqB3cIC23i72HtvPm7WHOdhaT8fgAJFohIgWlfjGMGx2oSg4
+HYkXl80mEbr84lRUaUmGMnyd2+HE63DG/wxdJxSNENZMjojKsKZcQTHJvok1NRHNvPwUex1RwB8O
+4g8F6RocoKm7g/2Nx1EVFcc2J+luD0uyC1i2oJyV5ctYva
+
+</details>
+<details>
+  <summary>All Mail - rafaelshell24@gmail.com	</summary>
+From - Wed Feb  9 17:08:47 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp278912lqf;
+        Tue, 1 Feb 2022 16:26:24 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJyYOdP8mj8ORu4Wybib6fR5yxQGBdKGGIToaPRJuZCqpppaswkYTmTlbX0xVhHNZyO7x8ee
+X-Received: by 2002:ac8:5a93:: with SMTP id c19mr21563072qtc.58.1643761584084;
+        Tue, 01 Feb 2022 16:26:24 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643761584; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=BkdBmE7cIPsT3T86NVktUiiPtY6JgXLEp1+M30WsVno6fwzARIVwpAfDXRmsqnbbDx
+ ††††
+0fyFhs/DQa8dVSaZ+6sF6GppQLVSs4H/ThbyMnZvDdxlV5KYo+nRDfxEW0Utz7xLIbrX
+         ae92z/9p+NpdjNnWbt6y2Btse5gOD3ZnpNgrNoB3zBOUOOQWzYAnTl5H9H07pH1yUKtQ
+ ††††
+7YYPkMo7o0tqmI+ROuR2BVn26ntkXszFBlGRspEIXOMRS8SxDUnuHmz+bY084EQU92Qd
+         3MQJ0wxQilyUqmbT6/jJMS/NxDnnA/Sfek+dSBskUNLuCAXCxckfZb/J/iMBwGwiWDB5
+ ††††
+zm/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:to:from:date;
+ †††
+ bh=v5DYbisOrqeDvqUhO2YwnMY7xMc85CLrIqgkYlnNcx8=;
+ †††
+ b=JG8Sq0TEnPMRFBSvRH+Xt70RlLi/fGTDPhJuJv43TrJ/S+X+r6sfYPahowyfb5uGMC
+ ††††
+TBNPt2i6IFgz4DZIduzKby/uVQYan8tREEsPkbUooN5UO3pTq10GBxJA9JXwlNtYOjRM
+         vK5g2L7e5UtMwy6z0N5pH1Rn6fOEaKywGOgTMEvJgKG+qoux7EXjv4LVIjwcXeekkyQm
+ ††††
+KU0iIJe8KVTkG7OIZfJhsvPdXXOx/ac/1aC9QejZE5z8jV20MbmC30Z4hFzL2PO0AR36
+         qsbUid3pefV+jouUv8tk0bff3LNrE36xXWEOFmz063v5NqEQABe7WycnaIA8EmcZA5FJ
+ ††††
+Xksw==
+ARC-Authentication-Results: i=1; mx.google.com;
+ †††
+spf=pass (google.com: domain of noreply@champlain.edu designates 216.93.144.74 as permitted sender) smtp.mailfrom=noreply@champlain.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=champlain.edu
+Return-Path: <noreply@champlain.edu>
+Received: from smtp1.champlain.edu (74-144.champlain.edu. [216.93.144.74])
+ †††
+ by mx.google.com with ESMTP id 2si13663943qtf.740.2022.02.01.16.26.23
+        for <rafaelshell24@gmail.com>;
+        Tue, 01 Feb 2022 16:26:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@champlain.edu designates 216.93.144.74 as permitted sender) client-ip=216.93.144.74;
+Authentication-Results: mx.google.com;
+ †††
+spf=pass (google.com: domain of noreply@champlain.edu designates 216.93.144.74 as permitted sender) smtp.mailfrom=noreply@champlain.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=champlain.edu
+Date: Tue, 01 Feb 2022 16:26:24 -0800 (PST)
+Received: from cp-lakeside.localdomain (135-150.champlain.edu [216.93.150.135])
+	by smtp1.champlain.edu (Postfix) with ESMTP id 609E5406AFD1
+	for <rafaelshell24@gmail.com>; Tue,  1 Feb 2022 19:26:23 -0500 (EST)
+From: noreply@champlain.edu
+To: rafaelshell24@gmail.com
+Message-ID: <1101466864.7956.1643761583398.JavaMail.avendatomcat@cp-lakeside>
+Subject: Visitor account receipt for rafaelshell24@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7955_1331751788.1643761583381"
+------=_Part_7955_1331751788.1643761583381
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_bf49b829b3c5a084395d4efd10c37ba8"
+Content-Transfer-Encoding: quoted-printable
+--=_bf49b829b3c5a084395d4efd10c37ba8
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+Visitor account receipt for rafaelshell24@gmail.com
+		  Welcome Rafael Shell, your account has been created and is now ready to use.
+		   
+	Wi-Fi Network: ChamplainGuest
+	Guest Account and Wi-Fi Instructions:
+			Make sure your wireless adapter is set to dynamically obtain an IP address
+			Connect to the wireless network: ChamplainGuest
+						Enter credentials:
+	– Username: rafaelshell24@gmail.com
+	– Password: 679670
+						Account expires: Friday, February  4, 2022 19:26    
+								 
+								 
+										© Copyright 2022
+								 
+								 
+--=_bf49b829b3c5a084395d4efd10c37ba8
+Content-Type: multipart/related;
+ boundary="=_e7a8787e7f03e0f8276720b6fb2b61a5"
+--=_e7a8787e7f03e0f8276720b6fb2b61a5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+=2Ew3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+<title>Visitor account receipt for rafaelshell24@gmail.com</title>
+</head>
+<body>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"99%" bgcol=
+or=3D"#f1f1f1">
+  <tr>
+    <td bgcolor=3D"#f1f1f1">
+      <br />
+      <!-- Start email table -->
+      <style type=3D"text/css" media=3D"screen">
+      body {
+        margin: 0;
+        padding: 0;
+ †††
+ color: #222222;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f1f1f1;
+        background-color: #f1f1f1;
+        text-align: left;
+      }
+      a,a:link,a:active,a:hover,a:visited {
+ †††
+ color: #0087ce;
+        text-decoration: none;
+        margin:0;
+ †††
+ padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1,h2,h3,h4 {
+        font-family:Arial, Helvetica, sans-serif;
+ †††
+ margin: 0;
+ †††
+ padding: 0; =20
+        color: #222222;
+      }
+      p {
+ †††
+ margin: 0;
+ †††
+ padding: 0;=20
+ †††
+ line-height: 20px;
+ †††
+ font-size: 14px;
+ †††
+ color: #222222;
+      }
+      img {
+        border: none;
+ †††
+ margin: 0;
+ †††
+ padding: 0;=20
+      }
+      </style>
+      <table width=3D"618" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" align=3D"center" style=3D"border:1px solid #dddddd;">
+        <tr>
+          <td height=3D"20" colspan=3D"3"><img src=3D"cid:164376158361f9cfa=
+f2ab1c084327124" height=3D"20" width=3D"1" /></td>
+        </tr>
+ †††
+ <tr>
+ ††††
+ <td width=3D"20"><img src=3D"cid:164376158361f9cfaf2ab1c084327124=
+" height=3D"1" width=3D"20" /></td>
+          <td valign=3D"top" align=3D"left">
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0">
+              <tr>
+                <td align=3D"center">
+ †††††††††††††††††††††
+ <img src=3D"cid:164376158361f9c=
+faf2ab49226995136" style=3D"width: 25%;" width=3D"25%">
+                                    </td>               =20
+ ††††††
+ </tr>
+              <tr>
+                <td height=3D"42" valign=3D"middle">
+                  <img src=3D"cid:164376158361f9cfaf2ab57248634902" width=
+=3D"578" height=3D"2" />
+                </td>
+ ††††††
+ </tr>
+            </table>
+            <!-- End head -->
+<div>
+								=09
+ =20
+  <style>
+  .list-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  .list-counter > li {
+    counter-increment: step-counter;
+  .list-counter > li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.8em;
+  </style>
+ =20
+	<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgc=
+olor=3D"#FFFFFF">
+	  <tr>
+		<td colspan=3D"3" height=3D"30">&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td width=3D"30">&nbsp;</td>
+		<td>
+		  <p style=3D"font-family:Arial, Helvetica, sans-serif;font-weight:bold;f=
+ont-size:27px;color:#222222;line-height:36px;padding:0;margin:0;">Welcome <=
+span style=3D"color:#FF8300;">Rafael Shell</span>, your account has been cr=
+eated and is now ready to use.</p>
+		</td>
+		<td width=3D"30">&nbsp;</td>
+	  </tr>
+	  <tr>
+		  <td colspan=3D"3" height=3D"30">&nbsp;</td>
+	  </tr>
+	</table>
+	<!-- Set custom width below for larger content -->
+	<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+	  <tr>
+		<td height=3D"25">&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td valign=3D"top">
+		  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+align=3D"center">
+			<tr>
+			  <td valign=3D"top" width=3D"30"><img src=3D"cid:164376158361f9cfaf2ab7=
+7035627074" style=3D"width: 30px;" /></td>
+			  <td valign=3D"top">
+				<h3 style=3D"font-family:Arial, Helvetica, sans-serif;font-size:20px;li=
+ne-height:25px;font-weight:bold;color:#222222;margin:0;padding:0;">
+	Wi-Fi Network: <span style=3D"color:#FF8300;">ChamplainGuest</span>
+				</h3>
+			  </td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>	  <tr>
+		<td height=3D"22" valign=3D"top">
+		  <img src=3D"cid:164376158361f9cfaf2ab57248634902" width=3D"578" height=
+=3D"2" />
+		</td>
+	  </tr>
+	  <tr>
+		<td valign=3D"top">
+		  <h3 style=3D"font-family:Arial, Helvetica, sans-serif;font-size:20px;li=
+ne-height:20px;font-weight:bold;color:#222222;margin:0 0 10px 0;padding:0;"=
+	Guest Account and Wi-Fi Instructions:
+		  </h3>
+		  <ol class=3D"list-counter">
+			<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px 0;=
+padding:0;color:#222222;font-size:14px;">Make sure your wireless adapter is=
+ set to dynamically obtain an IP address</li>
+			<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px 0;=
+padding:0;color:#222222;font-size:14px;">Connect to the wireless network: <=
+span style=3D"color:#222222;"><strong><em>ChamplainGuest</em></strong></spa=
+n></li>
+						<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px=
+ 0;padding:0;color:#222222;font-size:14px;">Enter credentials:
+			  <ul style=3D"list-style-type:none;list-style-position:inside;margin:0;=
+padding:3px 0 0 20px;">
+				<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 3px 0;=
+padding:0;color:#222222;font-size:14px;">
+	&ndash; <em>Username: <span style=3D"color:#222222;"><strong>rafaelshell24=
+@gmail.com</strong></span></em>
+				</li>
+				<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 3px 0;=
+padding:0;color:#222222;font-size:14px;">
+	&ndash; <em>Password: <span style=3D"color:#222222;"><strong><em>679670</e=
+m></strong></span></em>
+				</li>
+			  </ul></li>
+						<li style=3D"font-family:Arial, Helvetica, sans-serif;margin:0 0 10px=
+ 0;padding:0;color:#222222;font-size:14px;">Account expires: Friday, Februa=
+ry  4, 2022 19:26</li>    </ol>
+		</td>
+	  </tr>
+	</table>
+</div>
+												<!-- Start body_end --> =20
+						<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" bgcolor=3D"#ffffff">
+							<tr>
+								<td colspan=3D"3" height=3D"20" bgcolor=3D"#ffffff"><br /></td>
+							</tr>
+							<tr>
+								<td colspan=3D"3" height=3D"20">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width=3D"20">&nbsp;</td>
+								<td align=3D"center">
+									<p style=3D"font-family:Arial, Helvetica, sans-serif;padding:0;col=
+or:#666666;font-size:10px;">
+										&copy; Copyright 2022
+									</p>
+								</td>
+								<td width=3D"20">&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan=3D"3" height=3D"20">&nbsp;</td>
+							</tr>
+						</table>
+											</td>
+					<td width=3D"20"><img src=3D"cid:164376158361f9cfaf2ab1c084327124" hei=
+ght=3D"1" width=3D"20" /></td>
+				</tr>
+				<tr>
+					<td height=3D"20" colspan=3D"3"><img src=3D"cid:164376158361f9cfaf2ab1=
+c084327124" height=3D"20" width=3D"1" /></td>
+				</tr>
+			</table>
+			<!-- Start email table -->
+			<br />
+		</td>
+	</tr>
+</table>
+<div style=3D"position:absolute;left:-4px;"><img src=3D"cid:164376158361f9c=
+faf2ab1c084327124" width=3D"1" height=3D"1"><img src=3D"cid:164376158361f9c=
+faf2ab49226995136" width=3D"1" height=3D"1"><img src=3D"cid:164376158361f9c=
+faf2ab57248634902" width=3D"1" height=3D"1"><img src=3D"cid:164376158361f9c=
+faf2ab77035627074" width=3D"1" height=3D"1"></div></body>
+</html>
+--=_e7a8787e7f03e0f8276720b6fb2b61a5
+Content-Transfer-Encoding: base64
+Content-ID: <164376158361f9cfaf2ab1c084327124>
+Content-Type: image/gif;
+ name=1x1.gif
+Content-Disposition: inline;
+ filename=1x1.gif;
+ size=51
+R0lGODlhAQABAJEAAP///wAAAAAAAAAAACH5BAkAAAAALAAAAAABAAEAAAgEAAEEBAA7
+--=_e7a8787e7f03e0f8276720b6fb2b61a5
+Content-Transfer-Encoding: base64
+Content-ID: <164376158361f9cfaf2ab49226995136>
+Content-Type: image/png;
+ name=champlain_college_logo.png
+Content-Disposition: inline;
+ filename=champlain_college_logo.png;
+ size=42779
+iVBORw0KGgoAAAANSUhEUgAAAtAAAACoCAYAAADJudkZAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAA
+CXBIWXMAABwgAAAcIAHND5ueAAAAB3RJTUUH4QQOExAv++CBVQAAgABJREFUeNrsnXd8JVd5sJ+Z
+29W7VlpJ27W9eF3Wbd1tbOOGKbYBUwQJzSG0JEDIRwgJJSQkBNEMGAOmYxuDjXtva6+3e5u2adV7
+v9KtM98f79zVqM+V7tWVduf5/a6tlebOnHPmlPe85y0Kc4zbv/QAgIpCUSiiubqHAmnBaMTZG444
+g5GoqqODFlUc6KiKoizIzLxEVZTzABXQI1GtZCgSWaKDc+zddQAUFD0QjWZEdd3lczj6FEXR5G/K
+RMVSfE7nPrdD7dLlIlXT9f3dQ0NPDYZCfhRViSoOXVHA43DoWS5nxKGqutfpDBWk+QazPJ7+u790
+fd/TD9dy1Y1LUt3ENjY2NjY2NjY2M0CZ+S3i56Nf+ytAZvdgoLR7KJDfGwxm9IfDnkAkqjp0TXGp
+ijfP53u7DrmhaHRxVNPThqLRjIimu3V0dE1TVUMY1nTU4XroaJqu6PrYZ+qAoqjj1V03X6Xr+kSN
+ojscirnJdEVBV0DXUdAVVVcURXeqSsTrcPhVhYhDUbs8TkddVNNq+oKBbYGIHsDhwKWqWpbbFc52
+e/qyvZ6+HJ+n1ed2dXz3n96iY2NjY2NjY2NjM6dJqgD99998HJdD9Zzs7l3X7h9a4w+HM7uCoXS0
+KBkuZ4XH4dgY1fVFYU3LD0U1X0TTVNBRdB1NBxGWdZPwq+BUFbLcLpyqiqLAgtxMnE4VdHA5VZaX
+55Gd6UUfI0UrKKo6aXl1XQddZ4RMbfrbviNtDAUjKAqEIxqd/YMEwxHQYTASwR+OGtdqgAjiqqqg
+KAqK8RtFVVEVRfM41KBLVdsditoa1bXD/cHQgYiiamkuZzDD6QwUpqXVprlddQoc/O2/32oL1jY2
+NjY2NjY2c4SECtA3/dPv0HWu7gkGL+4LhfIHQmGfEz3d53RUarAsqulpIU1zGjrbUWKqitfpINfr
+JtPrpiQ/i7wsH+uXF5Huc4GioKPgVBTSXU6cqmiDC7LTcDpEMHY6VEoKM0jzuhLeULquU9vUSygU
+BQUiUY1ef4BQJAo6BKJRhiLDArSiQHdfgO37m/APhmjrHSAYidI6GCCqaeiadqr1h1XhCg5Vxakq
+EaeiNOrQNBiO1EQVVct2u/pzPZ62dI/7SIbb9Zyi0Pbrf7s14fW0sbGxsbGxsbGZHMsC9Ge+9RRF
+GWnsbW5zNfT2uVoHh5RMp8OTn+b7QG8wtKU3GCoKRyNOj6qU61AS1XW3ZphDOFQRDB0OFYfDQa7H
+TWlWBgsLsli5uJC1ywtQVRWHouBxOHA7VdK8brxuJzkZHhQ1JZYmMyYcidLVGyAciTIUDBPVdYYi
+UWLtUtfcy94jrdS39tLa66djKMBgJAK6RjgSRdN0NEMb71AV3amoQRR6IprWFEYZzHS5+nI8nqZ0
+t+vlloGBPw1F9XChz6uXZGREctO84VAkqt/z5RtT3Qw2NjY2NjY2NqcVk0qmVV/5C4qieOp6+3Ia
+Bvxer6pk5no9N/tD4et6gqEFUS3icaDkarqepum64lAUPC4n6V4XPq+LNLebkow0li3IZe3SYjat
+KsblFEHZqTpwOVU8Licul2qpsLquE4mE0YFwJIymaQBEdY1INHrqOk3XCGtR9AQZPjhVFac6bGqt
+AE6HE9XQgjtVBw6HA0VRcDqcKIo1gT8a1QmGIoQjUcKaRjQmMGs6T247zommbo639dA+NEQ4GiUQ
+DDMUCDMUihDWxNTEoSpRRVH8mq73OhyuYLbb1ZLhdr3WFwz+qicU6S5M80UWZWf3L83PGQhEItH/
+/txView/NjY2NjY2NjZnHCMkvZ/9cg8fvHMjn/zG42l7W9pXNvv96Tke19no3NYbCq8KRyNeVddc
+UU13aDpKmstJbrqXksIs0n1uCnxelhbmsHlVKRtWFKGqCqqijPj/ZEQiEYLhIIOBQULhMIFwiEg0
+wmAkTCgaoc/fR0NbI5FIhLbuDgYCgwAMBPx09PcCuphTRMI0+nvRdG3GDaQDuZ40CnzpqIqKruu4
+nE4KMnPxuj0oQF5mDjlZ2TgdThYWlpKdkYVTUfE53TgdDnwuDw6HgzSvD5fDic+bNuVzo1ENTQdN
+10/Zc9fUdrHvWCsH6tppHwwwFAnT1TNIe7efvkCIYDSKqqCrIlSHFdURyXC52tJdzpf6w+G/hjS9
+qdDnGyrLyqxzKEr7L75yc2p6nY2NjY2NjY3NPEYBePe/PIiqKPmtfv/Z9X0D5T6HslJRlHf6w5Gy
+aDTq1HWNSBS8TgelORmsXlxIYV4GhWleli3I5fx1ZeRkeS0/dCgwRGdvJ/2DfnoH+xkMBekNDdHR
+201HTwdtPR30D/rp8fcxFArSPjTAQDiAYpb3TVreVBh46KP/NUrbneZ0UeDLxOf2kJeRhdftoTAn
+n3RfOhXF5aS7PWS6PGSnZeB1e8jPyiM9LR2fxxdXOQ6d6GTf0Rbqu/vpC4Vo7xrgSF0XbX1++kJh
+dF0TG3FFweVwhH1OZ4uqKE/3BMOvZHs9g+WZGXtWFOYd6hwcitzzL7a5h42NjY2NjY3NVCjX/+Nv
+t9b19l+ja9EVLod64VA4slDTNVXTdBQUCtK9rCkv5Ny1ZeSme1iYm8maJYXkZVsT9Lr7e6htOkln
+fw9tvV20DfXT2ddDc2cLfYMD9Pj78AcDdAcHieryTEVRQEF+BlCU1MTbmyG6Lo6SuiFgx/6v6RoZ
+Lg9Zbi/Z6Zn43F4Kc/LIzsimODufPE8aBVk55GfmUFZYSmFeIQ7VYemZXT1DHKnroqV3gL5QmPbu
+AV7eU8fJjl56AiGQ+NmgKLidjqBLUXYORrUd2R5PS2lG+lOKorz2p2+8K9VNZ2NjY2NjY2MzZ1HW
+/c0PDkd0fUVU0xSHoqA6HJRkpHPFpsVcvKmCNJeTBbkZlBRkInGQR6IbJgY6OoFQkLqWBg7VHaGx
+s5WWgV7qe9rp7OtiMDBEf2CQgVCAqG6Ed2M4xJtVu+HTBT3WdjHhWtfRdA2n6iDd6Sbd6yPd4yM7
+I4vcjGxKM3Iozy2kMCef5WVLWFKySLYXipjHTNR+gWCE+tY+uv1DDATDvLqngW2H6qnvGSAYiaBr
+GhoKLoeKw+G8G5SP7Pvhh1PdPDY2NjY2NjY2cxZnMBqtVBWFxfk53HjOCi4/dwk5GR5y0r1kpLnH
+fEHXdSLRiNgoR0IcrT/G4fpj1DTVcrSzhQ5/L4OBIYLhEMFohIimiZCsKCgKOBxOrOlSE8d0fQmT
+KdIPbxoU04OkZQa1MH5/GPy9aJ3NKDq4HQ48Ljdupwufx0thRg5Lc4soySlg9aIVbFi+DrfTicvh
+wu104nBIIkavx8mKirxTzz2vspQPDm4kFNU4XNvBY9uO8vzhegaCIUJ6NM8OOG1jY2NjY2NjMzlO
+XdNZmJ/F5995EZedvWhcRz9N0xgYGqB3cIC23i72HtvPm7WHOdhaT8fgAJFohIgWlfjGMGx2oSg4
+HYkXl80mEbr84lRUaUmGMnyd2+HE63DG/wxdJxSNENZMjojKsKZcQTHJvok1NRHNvPwUex1RwB8O
+4g8F6RocoKm7g/2Nx1EVFcc2J+luD0uyC1i2oJyV5ctYva
+
+</details>
+<details>
+  <summary>All Mail - noreply@bumble.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - rafaelshell24@gmail.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - no-reply@accounts.google.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - account-security-noreply@accountprotection.microsoft.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - noreply@mojang.com</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - hello@getslopes.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - google-noreply@google.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - noreply@champlain.edu	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - googlecommunityteam-noreply@google.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+<details>
+  <summary>All Mail - googlepixel-noreply@google.com	</summary>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:1f86:0:b0:11f:6b8e:5a5f with SMTP id v6csp488779lqf;
+        Wed, 2 Feb 2022 13:23:16 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJw8tFcdu38Vt06AzJzMtVhl2ut8C55Y58CtQprQnsaHV6T8SmpfL29nrbe366c9Cg1lcPLF
+X-Received: by 2002:a05:6122:1254:: with SMTP id b20mr13546539vkp.0.1643836996410;
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643836996; cv=none;
+        d=google.com; s=arc-20160816;
+ †††
+ b=aOgIDiuycM6qjPK+V4ABL9U1lwc2O1h8o+YNrwr9SGpCibTkQsAIF3kb/VoSXQK6BD
+ ††††
+JNZBQV5M96xZs0Zo6aVncZbAgx3ZnjWPnfxkvYgGdQbuIa6ugVJ1V1PHSmM3o4lds3p7
+         yVTrYs6jPu9rqZmfWYfXF0N9vIKeSTR63wGuP3jl3ID6WUIXnmQtwvvIYimXYEX4ldUD
+ ††††
+ZYaNIQLFz1ZbPZNt6pS5h+Ldl1/+bFNkY79MW9PSyumhc2nn3QCMoc7J+pJ9iDnyyK2a
+         GwH4Gxgot7a1atnaHlg3o+LiW723ZKQgpyBlaqkYzZn1wwdiZtnyKMGUrMo1O5ojW+Bn
+ ††††
+BIFQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:content-transfer-encoding:feedback-id:message-id
+         :list-unsubscribe:from:reply-to:mime-version:to:date:dkim-signature
+         :dkim-filter;
+        bh=r7mMsSF2EzYgwQcQLPWsgvMKcv8amPRx9yzJPyjAOAM=;
+        b=awoys4lNTYDN7n/bbVeoyhuCxCfCx3rXWiy7RSH+gTCicM+d183tWYWGTh0+9WuFPJ
+         sZ7awi7AGRoKaB67aJm8VlcgKPPVqlCo4XWXQbrvfDUT4SoqPdsCG0i6NUfpHAcFWSh6
+ ††††
+xuBev8TiClX9qNvegsXbvyy49RET+HLUqMmdMWffT4Io5MVqOCdo5xW94yPAan+wVa1t
+         mhxbwk3YLq8Ivc5yhFcbhvrsa6B+cqq46+icDSBurViWC3/jkzlA7qDC1CyPB++5ga4z
+ ††††
+MfglyIQtvJv/sVHyIeaOvqM3tTugQib4w3RblUgM3gCPvpS8TD6/QuwtxLfaPFzMxTCR
+         8uyg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Return-Path: <noreply@bumble.com>
+Received: from cluster2.monopost.com (cluster2.monopost.com. [31.222.73.229])
+ †††
+ by mx.google.com with ESMTPS id l6si1644564vsc.237.2022.02.02.13.23.15
+ †††
+ for <rafaelshell24@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 02 Feb 2022 13:23:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) client-ip=31.222.73.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bumble.com header.s=m23uiy45 header.b=EdTqm8L5;
+       spf=pass (google.com: domain of noreply@bumble.com designates 31.222.73.229 as permitted sender) smtp.mailfrom=noreply@bumble.com;
+ †††
+dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bumble.com
+Received: from localhost (wwwbma161.ulan [10.20.79.206])
+	by cluster2.monopost.com (Postfix) with ESMTP id BDD7711005D0
+	for <rafaelshell24@gmail.com>; Wed,  2 Feb 2022 21:23:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 cluster2.monopost.com BDD7711005D0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bumble.com;
+	s=m23uiy45; t=1643836995;
+	bh=j58KynqlC75O15K58sY/AIyKceXXjpvxoNJGS5sPld8=;
+	h=Date:To:Reply-to:From:List-Unsubscribe:Subject;
+	b=EdTqm8L50WwbEfub+SvnpqgvpP7iOnr8GQH0pv6O6D4rdu+WD64c0KyCfIJTQikw1
+	 hscLcsn5aHlDEe9ERkLqTvjusln0l33EQeED0R/0Diou6TKQXpAgcONyqnwvFxhIzn
+	 hfaSi2+cZE8/qmxJjiT/XREA9EUxzFFEnr2oGDTA=
+Date: Wed, 02 Feb 2022 21:23:15 +0000
+To: rafaelshell24@gmail.com
+MIME-Version: 1.0
+Reply-to: noreply@bumble.com
+From: Bumble <noreply@bumble.com>
+X-campaignid: badoo 106.600.3.220202
+List-Unsubscribe: <mailto:unsubscribe+600.1178564394822931969.106.61faf642.69dc53@badoo.com?subject=c6AVDhI3Tz4LdywEOs4MJUlZ8CyPyIHp3QJRA2g1WOWLWjH>
+Message-Id: <diKmIzc8UmmFRFxzEax7ubTNft5hyjTKEWsj8iw7bV1sLXKt30yMneftYkQ5DVozOsVqL9h0DaAuP1l@monopost.com>
+X-Recipient-User-Id: zAgUACjE3MjA2OTAzMTYAIHhvGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG
+Feedback-ID: 220202:600:61140:badoo
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Subject: =?UTF-8?B?8J+RiyBQbGVhc2UgY29uZmlybSB5b3VyIGVtYWlsIGFkZHJlc3M=?=
+<!DOCTYPE html>=0A<html>=0A<head><meta http-equiv=3D"content-type" content=
+=3D"text/html; charset=3DUTF-8" />=0A=0A    <title>=F0=9F=91=8B Please conf=
+irm your email address</title>=0A    <style>=0A        body {=0A           =
+ padding: 0;=0A            margin: 0;=0A            -webkit-text-size-adjus=
+t: none;=0A        }=0A        .m__footer-address a {=0A            text-de=
+coration: none;=0A            pointer-events: none;=0A            cursor: d=
+efault;=0A            color: #fff;=0A        }=0A    </style>=0A</head>=0A<=
+body lang=3D"en" dir=3D"ltr" bgcolor=3D"#ffc629" style=3D"background: #ffc6=
+29;">=0A<table border=3D"0" bgcolor=3D"#ffc629" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"background: #ffc629; direction: ltr; min-w=
+idth: 300px; text-align: left; font: 14px/20px Helvetica, Arial, sans-serif=
+;">=0A    <tr><td>=0A            <center>=0A                <table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                    <tr><td>=0A                            <table border=
+=3D"0" bgcolor=3D"white" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=0A                                <tr>=0A                                =
+    <td style=3D"padding: 15px 0; text-align: center;" align=3D"center">=0A=
+ †††††††††††††††††††
+ <img style=3D"vertical-align: top; =
+line-height: 33px; font-size: 33px; color: #ffc629;" src=3D"https://pd2us.b=
+umbcdn.com/i/v2/-/moxie/i/email/sz___size__/logo@2x.73a663b4c3dfd1d9f66c.pn=
+g" width=3D"188" height=3D"30" alt=3D"Bumble">=0A                          =
+ ††††
+ </td>=0A                                </tr>=0A                 =
+ †††††
+</table>=0A=0A                            <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background: #ffc6=
+29;">=0A                                <tr>=0A                            =
+ †††
+ <td align=3D"center">=0A                                        <ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"max-width: 520px; min-width: 300px;">=0A                               =
+ ††††††
+<tr>=0A                                                <td cla=
+ss=3D"layout-wrap layout-wrap--bumble" style=3D"padding: 5%; line-height: 1=
+.2;">=0A                                                    <table bgcolor=
+=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=0A    <tr>=0A        <td style=3D"padding: 8% 5% 0; text-align: center;"=
+>=0A            <span style=3D"display: inline-block; vertical-align: top;"=
+>=0A                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 480px; margin: 0 auto;">=0A            =
+        <tr>=0A                        <td align=3D"center">=0A            =
+                <span style=3D"font-size: 22px; line-height: 26px; color: #=
+333">=0A                                Almost there...=0A                 =
+           </span>=0A                        </td>=0A                    </=
+tr>=0A                </table>=0A            </span>=0A        </td>=0A    =
+</tr>=0A=0A    <tr>=0A        <td style=3D"padding: 2% 5% 3%; text-align: c=
+enter;">=0A            <span style=3D"font-size: 16px; line-height: 22px; c=
+olor: #7f7f7f; display: inline-block; vertical-align: top; max-width: 470px=
+;">=0A                To confirm your email address please tap this button=
+=0A            </span>=0A        </td>=0A    </tr>=0A=0A    <tr>=0A        =
+<td style=3D"padding: 0 0 8%; text-align: center;">=0A            <a href=
+=3D"https://us1.bumble.com/access.phtml?UID=3D1720690316&m=3D600&g=3D4-0-4&=
+mail_token=3DQGVuYzoxMToxOjV7NOgB7ijbqiiDVlEmOIM4JbUUipa2jEDJ6qL-v41bYIgRwv=
+S2sKOyBUOdcHabZ9NJtW8lQzvZ5dDzvtr5JMxOqY44WK-69RYNib7_qgP0HHu6C3G_rbEIIXz4f=
+Dhk8tIVjn_Wsknmbp-c3bRtOja7s-cbHKQUad8uHm3My7lKxuGBTXZzPppT__kSdh43ooJNCr2D=
+MLNObJePwpD4R5EiqCUsxQ4Jc_zq-Gl0rrPSJavmeK6x1wiYcd_F9sA0O5RaT-JBwGdDdL5cruw=
+2gFQ5X5WisW5oHaKZvhT6Ec0dAF3prIe9zNQTWlEvrY5PGssfJdnufj2As0oopvQ2dJQ&login=
+=3D01720690316&code=3DL64JWmOgpy&pref_lang=3D106&nomobile=3D1&mid=3D0401165=
+8a2121a5b1061faf64200000258668fa68c00020000eed46a4d37" style=3D"display: in=
+line-block; padding: 14px 30px 12px; background: #f8c736; text-decoration: =
+none; border-radius: 8px; color: #fff; font-weight: 600; font-size: 16px; t=
+ext-align: center;">=0A                Confirm email=0A            </a>=0A=
+=0A            <div style=3D"padding: 20px 5% 0; color: #949494; font-size:=
+ 13px; line-height: 18px;">=0A                You received this email, beca=
+use it was requested by <a href=3D"http://bumble.com/" style=3D"color: #6E3=
+EFF">Bumble</a> user. If you=E2=80=99ve received this by mistake, please do=
+n=E2=80=99t click on the link, simply delete this email.=0A            </di=
+v>=0A        </td>=0A    </tr>=0A</table>=0A=0A                            =
+ †††††††††
+ </td>=0A                                            </t=
+r>=0A                                        </table>=0A                   =
+ ††††††††
+</td>=0A                                </tr>=0A          =
+ ††††††††
+ </table>=0A=0A                            <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"color: #=
+fff; text-align: center;">=0A                                <tr><td style=
+=3D"padding: 0 5%;">=0A                                        <div style=
+=3D"max-width: 520px; margin: 0 auto;">=0A                                 =
+           <a href=3D"https://www.facebook.com/bumbleapp/?fref=3Dts" target=
+=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img src=
+=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-fb.435a=
+c246f7ddcd4e5744.png" width=3D"34" height=3D"34" style=3D"vertical-align: t=
+op; border: 1px solid transparent; color: #fff; line-height: 34px; text-ali=
+gn: center; text-decoration: underline;" alt=3D"Facebook"></a>=0A          =
+                                  <a href=3D"https://twitter.com/bumble" ta=
+rget=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;"><img s=
+rc=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/icon-tw.85=
+2288c36e66e2b4b8f3.png" width=3D"34" height=3D"34" style=3D"vertical-align:=
+ top; border: 1px solid transparent; color: #fff; line-height: 34px; text-a=
+lign: center; text-decoration: underline;" alt=3D"Twitter"></a>=0A         =
+                                   <a href=3D"https://www.instagram.com/bum=
+ble/" target=3D"_blank" style=3D"margin-right: 10px; text-decoration: none;=
+"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email/sz___size__/ic=
+on-ins.2e51ee066d40f0839496.png" width=3D"34" height=3D"34" style=3D"vertic=
+al-align: top; border: 1px solid transparent; color: #fff; line-height: 34p=
+x; text-align: center; text-decoration: underline;" alt=3D"Instagram"></a>=
+=0A                                            <a href=3D"https://www.pinte=
+rest.com/bumbleapp/" target=3D"_blank" style=3D"margin-right: 10px; text-de=
+coration: none;"><img src=3D"https://pd2us.bumbcdn.com/i/v2/-/-/staff/email=
+/sz___size__/icon-pint.2cfcc44f503c8125551f.png" width=3D"34" height=3D"34"=
+ style=3D"vertical-align: top; border: 1px solid transparent; color: #fff; =
+line-height: 34px; text-align: center; text-decoration: underline;" alt=3D"=
+Pinterest"></a>=0A                                            <a href=3D"ht=
+tps://www.linkedin.com/company/bumble-app" style=3D"text-decoration: none;"=
+ target=3D"_blank"><img src=3D"https://bumbcdn.com/i/04011658a2121a5b1061fa=
+f64200000258668fa68c00020000eed46a4d37-0-0-0_0/v2/-/-/staff/email/sz___size=
+__/icon-linkd.fe91a14227c931f03b7b.png" width=3D"34" height=3D"34" style=3D=
+"vertical-align: top; border: 1px solid transparent; color: #fff; line-heig=
+ht: 34px; text-align: center; text-decoration: underline;" alt=3D"LinkedIn"=
+></a>=0A                                        </div>=0A                  =
+ ††††††††
+ </td></tr>=0A                                <tr><td styl=
+e=3D"padding: 15px 5%;">=0A                                        <div sty=
+le=3D"max-width: 520px; margin: 0 auto;">=0A                               =
+ ††††††
+Copyright =C2=A9 2022 Bumble All rights reserved.<br>=0AFeedba=
+ck? <a href=3D"mailto:support@team.bumble.com" style=3D"color: #fff;">suppo=
+rt@team.bumble.com</a><br>=0A                                        </div>=
+=0A                                    </td></tr>=0A                       =
+ ††††
+<tr><td style=3D"border-top: 1px solid #fff; padding: 15px 5%;">=
+=0A                                        <div style=3D"max-width: 520px; =
+margin: 0 auto;">=0A                                            You're rece=
+iving this email because you created an account with Bumble.<br>If you pref=
+er not to receive emails like this, you may unsubscribe <a target=3D"_blank=
+" href=3D"https://us1.bumble.com/unsubscribe?uid=3DzAgUACjE3MjA2OTAzMTYAIHh=
+vGIS4OAimLBGCaCMHliDzdnwww3ZzhqLWIkP2bpHG&m=3D600&mid=3D04011658a2121a5b106=
+1faf64200000258668fa68c00020000eed46a4d37&g=3D0-0-4" style=3D"color: #fff;"=
+>here</a><br><br><span class=3D"m__footer-address">Bumble Trading LLC is a =
+company registered in the United States with its registered office at 1105 =
+W 41st Street, Austin, TX 78756</span>=0A                                  =
+      </div>=0A                                    </td></tr>=0A           =
+ ††††††††
+</table>=0A                        </td></tr>=0A          =
+      </table>=0A            </center>=0A        </td></tr>=0A</table>=0A</=
+body>=0A</html>
+From - Wed Feb  9 17:08:50 2022
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: rafaelshell24@gmail.com
+Received: by 2002:ab2:5a0f:0:b0:126:e55d:ac61 with SMTP id d15csp2743lqk;
+ †††
+ Thu, 3 Feb 2022 18:50:54 -0800 (PST)
+X-Received: by 2002:a63:7b48:: with SMTP id k8mr794735pgn.362.1643943054158;
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643943054; cv=none;
+ †††
+ d=google.com; s=arc-20160816;
+        b=nioK4hZ98Vd2O80vQ3JXnfnpJcDsWt42OwT8KGk7vEr+Sn3SPBicVHRG6o+3++A9bm
+         13d2wQa2lLkWC7NZl0dgRF5VXEmJMC2dJtnKS9slRtBfjsAPD4SXj7qupggA3YKizyFj
+ ††††
+BfrAPi14MO6llbJgmp4yoznsAYdRbiNb4/gWe8Ua/tPg2as8guskvljqUM929AL7LATp
+         fXxxx327C/2XK5Bn8sGU3+uSSgbXvGWDqf1Kd0+Fr4nPuuUX9w2Jhddlfzq/RtDhTNJ1
+ ††††
+vcCfGxbeScTX6rV+BkgLfCy8+B0zRR0siGGz7fRERP8MR8y8CukZqsrrlo6CgcnefRoJ
+         /TYw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+ †††
+ h=to:from:subject:message-id:feedback-id:date:mime-version
+ ††††
+:dkim-signature;
+        bh=7VJVPM0MD7DU22S/M4MkhvKcQFOwb4eQNqVVjOLVl5M=;
+        b=vGLtOz25yzw8ZeWJIA+ffEqF46LSvXWw7E4VaSTsDlXzqmiv9qQYKNmuUbIWWUkToZ
+         L6p+6fhR9TZw6awsjl99tuTliSj0kdjhkeZZmbuRDa/UEAEq6lJQbXbUnbrCitoknSZP
+ ††††
+1XhzelfpvMAIxlVbUbPOaavrBV4aPqoD4M952Ojy5NwMk7yFR+DDnZy3FzAenvvlSkA6
+         Rj8DskHVCQuv+4zw3lxhCkVVGoOxwLRFQWnE0eqzP04QkmrDffbjdY1AfyjsIFARo3eB
+ ††††
+x6kIffJyrhkv04pm5mLCd+WSXf7zhByb47Z+ZdzN1VK1jPj/5d/qORwNnPWlp5pi/83G
+         7sPg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=XmRdbJHh;
+ †††
+spf=pass (google.com: domain of 3jzt8yqgtdb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3jZT8YQgTDb4rs-vitp2eggsyrxw.ksskpi.gsqvejeipwlipp68kqemp.gsq@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id z28sor361756pff.5.2022.02.03.18.50.53
+        for <rafaelshell24@gmail.com>
+ †††
+ (Google Transport Security);
+ †††
+ Thu, 03 Feb 2022 18:50:54 -0800
+
+</details>
+  
+<details>
