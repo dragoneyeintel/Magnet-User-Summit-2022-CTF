@@ -1,6 +1,8 @@
 # Magnet User Summit 2022 CTF ![Dragon Eye Intelligence][DEI]
 [DEI]:https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/fdb3456cadce1303e2183c607c3688c0f82f0bb3/imgs/badge.png
 
+To search for directories by name: `find /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Containers/Data/Application/ -type d -name "Snapshots" -print`
+
 ## iPhone
 ### Preliminary Information (Acquired from GrayKey)
 <details markdown="1">
@@ -539,5 +541,5 @@ var/containers/Shared/SystemGroup/
 [APPGUID]/Library/BatteryLife/CurrentPowerlog.
 PLSQL < See File
 
-## iPhone
+## Windows
 ### Magnet Targeted Locations
