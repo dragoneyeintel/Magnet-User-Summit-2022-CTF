@@ -735,3 +735,201 @@ PLSQL < See File
   
 raw.githubusercontent.com	0	0	1644451297	31536000
 </details>
+
+<details>
+  <summary>/img_LenovoFinal.E01/vol_vol5/home/rafael/ops.json</summary>
+    "uuid": "3f4681f1-fb5f-4d50-9041-2b74015806fa",
+    "name": "DreadGlitter366",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+    "uuid": "8b0dec19-b463-477e-9548-eef20c861492",
+    "name": "n30forever",
+    "level": 4,
+    "bypassesPlayerLimit": false
+</details>
+
+<details>
+<summary>Crontab</summary>
+  /img_LenovoFinal.E01/vol_vol5/etc/crontab
+  
+   user-name command to be executed
+  
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+  
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+  
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+  
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+</details>
+
+Hostname - rshell-lenovo -
+/img_LenovoFinal.E01/vol_vol5/etc/hostname
+
+Networks - 
+link-local 169.254.0.0 - 
+/img_LenovoFinal.E01/vol_vol5/etc/networks
+
+<details>
+  <summary>passwd></summary>
+  
+root:x:0:0:root:/root:/bin/bash
+  
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+  
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+  
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+  
+sync:x:4:65534:sync:/bin:/bin/sync
+  
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+  
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+  
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+  
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+  
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+  
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+  
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+  
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+  
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+  
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+  
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+  
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+  
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+  
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+  
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+  
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+  
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+  
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+  
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+  
+tss:x:106:112:TPM software stack,,,:/var/lib/tpm:/bin/false
+  
+uuidd:x:107:115::/run/uuidd:/usr/sbin/nologin
+  
+tcpdump:x:108:116::/nonexistent:/usr/sbin/nologin
+  
+avahi-autoipd:x:109:118:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+  
+usbmux:x:110:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+  
+rtkit:x:111:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+  
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+  
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+  
+avahi:x:114:121:Avahi mDNS daemon,,,:/run/avahi-daemon:/usr/sbin/nologin
+  
+cups-pk-helper:x:115:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+  
+whoopsie:x:116:123::/nonexistent:/bin/false
+  
+sssd:x:117:124:SSSD system user,,,:/var/lib/sss:/usr/sbin/nologin
+  
+speech-dispatcher:x:118:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+  
+nm-openvpn:x:119:125:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+  
+saned:x:120:127::/var/lib/saned:/usr/sbin/nologin
+  
+colord:x:121:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+  
+geoclue:x:122:129::/var/lib/geoclue:/usr/sbin/nologin
+  
+pulse:x:123:130:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+  
+gnome-initial-setup:x:124:65534::/run/gnome-initial-setup/:/bin/false
+  
+hplip:x:125:7:HPLIP system user,,,:/run/hplip:/bin/false
+  
+gdm:x:126:132:Gnome Display Manager:/var/lib/gdm3:/bin/false
+  
+rafael:x:1000:1000:Rafael Shell,,,:/home/rafael:/bin/bash
+  
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+  
+zerotier-one:x:998:998::/var/lib/zerotier-one:/usr/sbin/nologin
+  
+postgres:x:127:135:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+  
+xrdp:x:128:136::/run/xrdp:/usr/sbin/nologin
+  
+</details>
+
+<details>
+  <summary>Shadow</summary>
+  
+| Artifact | Decrypted |
+| --- | --- |
+| `root:!:18987:0:99999:7:::` | NULL |
+| `daemon:*:18912:0:99999:7:::` | NULL |
+| `bin:*:18912:0:99999:7:::` | NULL |
+| `sys:*:18912:0:99999:7:::` | NULL |
+| `sync:*:18912:0:99999:7:::` | NULL |
+| `games:*:18912:0:99999:7:::` | NULL |
+| `man:*:18912:0:99999:7:::` | NULL |
+| `lp:*:18912:0:99999:7:::` | NULL |
+| `mail:*:18912:0:99999:7:::` | NULL |
+| `news:*:18912:0:99999:7:::` | NULL |
+| `uucp:*:18912:0:99999:7:::` | NULL |
+| `proxy:*:18912:0:99999:7:::` | NULL |
+| `www-data:*:18912:0:99999:7:::` | NULL |
+| `backup:*:18912:0:99999:7:::` | NULL |
+| `list:*:18912:0:99999:7:::` | NULL |
+| `irc:*:18912:0:99999:7:::` | NULL |
+| `gnats:*:18912:0:99999:7:::` | NULL |
+| `nobody:*:18912:0:99999:7:::` | NULL |
+| `systemd-network:*:18912:0:99999:7:::` | NULL |
+| `systemd-resolve:*:18912:0:99999:7:::` | NULL |
+| `systemd-timesync:*:18912:0:99999:7:::` | NULL |
+| `messagebus:*:18912:0:99999:7:::` | NULL |
+| `syslog:*:18912:0:99999:7:::` | NULL |
+| `_apt:*:18912:0:99999:7:::` | NULL |
+| `tss:*:18912:0:99999:7:::` | NULL |
+| `uuidd:*:18912:0:99999:7:::` | NULL |
+| `tcpdump:*:18912:0:99999:7:::` | NULL |
+| `avahi-autoipd:*:18912:0:99999:7:::` | NULL |
+| `usbmux:*:18912:0:99999:7:::` | NULL |
+| `rtkit:*:18912:0:99999:7:::` | NULL |
+| `dnsmasq:*:18912:0:99999:7:::` | NULL |
+| `kernoops:*:18912:0:99999:7:::` | NULL |
+| `avahi:*:18912:0:99999:7:::` | NULL |
+| `cups-pk-helper:*:18912:0:99999:7:::` | NULL |
+| `whoopsie:*:18912:0:99999:7:::` | NULL |
+| `sssd:*:18912:0:99999:7:::` | NULL |
+| `speech-dispatcher:!:18912:0:99999:7:::` | NULL |
+| `nm-openvpn:*:18912:0:99999:7:::` | NULL |
+| `saned:*:18912:0:99999:7:::` | NULL |
+| `colord:*:18912:0:99999:7:::` | NULL |
+| `geoclue:*:18912:0:99999:7:::` | NULL |
+| `pulse:*:18912:0:99999:7:::` | NULL |
+| `gnome-initial-setup:*:18912:0:99999:7:::` | NULL |
+| `hplip:*:18912:0:99999:7:::` | NULL |
+| `gdm:*:18912:0:99999:7:::` | NULL |
+| `rafael:$6$K3CmCaOUvBCjYM/B$kQeELBHfkONX2GLVjz2dUK9qlxPlA98oQV9YSJCV7q07Cd1XHOTPCDyYpjv4pCCAu258XRTaESQ3GdWw6gvi81:18987:0:99999:7:::` | NULL |
+| `systemd-coredump:!*:18987::::::` | NULL |
+| `zerotier-one:!:19029::::::` | NULL |
+| `postgres:*:19034:0:99999:7:::` | NULL |
+| `xrdp:!:19035:0:99999:7:::` | NULL |
+  
+</details>
