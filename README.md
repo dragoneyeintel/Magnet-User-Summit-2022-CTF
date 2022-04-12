@@ -541,5 +541,11 @@ var/containers/Shared/SystemGroup/
 [APPGUID]/Library/BatteryLife/CurrentPowerlog.
 PLSQL < See File
 
+### ILEAPP
+`mkdir outleapp`
+
+`python3.9 ileapp.py -t zip -i /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/fb028ddefa8af7df5b12d3e729f075d150637a31_files_full.zip -o outleapp`
+
+
 ## Windows
 ### Magnet Targeted Locations
