@@ -7884,10 +7884,10 @@ Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73]
  Thu, 03 Feb 2022 18:50:54 -0800
 
 </details>
-  
 	
-^^^ EMails show usernames {spotify/google/microsoft-rafaelshell24@gmail.com, Mojang purchase info: Visa 453641******1815/Order ID: #303f33d7593846a5baea5c6e3e27aaa4/Transaction ID: braintree:j822gvrx, ChamplainGuest Creds: rafaelshell24@gmail.com/679670, twitter acc @RafaelShell2} ^^^
-	
+</details>
+
+EMails show usernames {spotify/google/microsoft-rafaelshell24@gmail.com, Mojang purchase info: Visa 453641******1815/Order ID: #303f33d7593846a5baea5c6e3e27aaa4/Transaction ID: braintree:j822gvrx, ChamplainGuest Creds: rafaelshell24@gmail.com/679670, twitter acc @RafaelShell2} 
 	
 <details>
 <summary>Downloads></summary>
