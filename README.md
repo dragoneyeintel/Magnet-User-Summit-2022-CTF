@@ -723,3 +723,15 @@ PLSQL < See File
 | `htop` | /img_LenovoFinal.E01/vol_vol5/home/rafael/.bash_history |
   
 </details>
+
+<img src="https://github.com/dragoneyeintel/Magnet-User-Summit-2022-CTF/blob/9b179575181844f7abd5e8df93d8f20d96df9b1d/Extracted/RAOxspYx.jpeg" align="center"
+     alt="certutil-MD5" width="600" height="400">
+
+/img_LenovoFinal.E01/vol_vol5/home/rafael
+
+<details>
+<summary>/img/LenovoFinal.E01/vol_vol5/home/rafael</summary>
+# hostname	port	incl. subdomains	created	max-age
+  
+raw.githubusercontent.com	0	0	1644451297	31536000
+</details>
