@@ -533,3 +533,11 @@ private/var/mobile/Library/Application Support/com.apple.remotemanagementd/ < Se
 
 SMS Data, Timestamps, IDs, and more
 /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Library/SMS/ < See File; no contacts, no phone calls
+
+Power Log
+var/containers/Shared/SystemGroup/
+[APPGUID]/Library/BatteryLife/CurrentPowerlog.
+PLSQL < See File
+
+## iPhone
+### Magnet Targeted Locations
