@@ -1,6 +1,9 @@
 # Magnet User Summit 2022 CTF ![Dragon Eye Intelligence][DEI]
 [DEI]:https://github.com/dragoneyeintel/A-Comparative-Analysis-of-Digital-Forensic-Platform-Artifact-Recovery-Capabilities/blob/fdb3456cadce1303e2183c607c3688c0f82f0bb3/imgs/badge.png
 
+This README presents findings sifted through before the competition. They do not necessarily have anything to do with the questions in particular, to see question-related information navigate to the "Question x" folder above.
+
+
 To search for directories by name: `find /home/noot/Desktop/Magnet2022/Source/Jess_CTF_iPhone8/private/var/mobile/Containers/Data/Application/ -type d -name "Snapshots" -print`
 
 ## iPhone
