@@ -939,7 +939,8 @@ xrdp:x:128:136::/run/xrdp:/usr/sbin/nologin
 
 unshadow passwd shadow.txt > unshadowed.txt
 
-sudo john --wordlist='/home/noot/Documents/Tools/Scripts/Wordlists/Pass/rockyou.txt' unshadowed.txt 
+sudo john --wordlist='/home/noot/Documents/Tools/Scripts/Wordlists/Pass/rockyou.txt' unshadowed.txt
+Was unable to crack the password using John.
 
 
 ### Autopsy
